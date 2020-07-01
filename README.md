@@ -1,8 +1,11 @@
-# Justin Zhang's Portfolio Website
+# Justin Zhang's Portfolio Website 🤠
 https://justinzhang.ca
 
-## Created With
-- React
-- Gatsby
-- Bootstrap 4
-- Framer Motion API
+### Bootstrapped With
+'<gatsby new>'
+
+### Tools Used
+- [React](https://reactjs.org/)
+- [Gatsby](https://www.gatsbyjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
+- [Framer Motion Library](https://www.framer.com/motion/)
