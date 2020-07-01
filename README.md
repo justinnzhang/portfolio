@@ -2,7 +2,8 @@
 https://justinzhang.ca
 
 ### Bootstrapped With
-'<gatsby new>'
+I think you should use an
+`<addr>` element here instead.
 
 ### Tools Used
 - [React](https://reactjs.org/)
