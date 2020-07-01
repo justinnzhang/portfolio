@@ -1,0 +1,106 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+}
+
+p,
+p1,
+p2,
+p3,
+p4 {
+  font-family: "Inter", sans-serif;
+}
+
+.sm {
+  font-size: 0.75rem;
+}
+.rg {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 1.2rem;
+}
+
+.lg {
+  font-size: 1.5rem;
+}
+.xl {
+  font-size: 2rem;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-sbold {
+  font-weight: 600;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+/* Footer */
+
+.right-first {
+  text-align: right;
+}
+
+.left-first {
+  text-align: left;
+}
+
+.hide-on-sm {
+  display: block;
+}
+.display-on-sm {
+  display: none;
+}
+
+/* Small Viewports */
+@media only screen and (max-width: 768px) {
+  .center-on-sm {
+    text-align: center !important;
+  }
+  .center-on-md {
+    text-align: center !important;
+  }
+
+  .hide-on-sm {
+    display: none;
+  }
+  .display-on-sm {
+    display: block;
+  }
+}
+
+.numbered-list {
+  font-family: "Public Sans", sans-serif;
+}
+
+.less-text {
+  max-width: 550px;
+  padding: 20px;
+
+  margin: 0 auto;
+}

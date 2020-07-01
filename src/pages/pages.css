@@ -1,0 +1,431 @@
+/* ------------------------- LANDING PAGE ------------------------- */
+.color-lightgrey {
+  color: #dbdbdb;
+}
+.inner-padding {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.initial-wave {
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .initial-wave {
+    position: absolute;
+    margin-left: 40%;
+  }
+
+  .header-fix {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .medium-fix {
+    padding-bottom: 50px;
+  }
+}
+
+.dynamic-cards {
+  overflow: hidden;
+}
+
+.hovered {
+  background: grey;
+}
+
+/* Social Buttons */
+.github {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: white;
+  color: black !important;
+}
+
+.email {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: white;
+  color: #dc483c !important;
+}
+
+.linkedin {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: white;
+  color: #2867b2;
+}
+
+.youtube {
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: white;
+  color: #c4302b;
+  transition: all 0.333s;
+}
+
+.featured-section {
+  background: rgb(227, 238, 255);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(227, 238, 255, 1) 0%,
+    rgba(183, 233, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(227, 238, 255, 1) 0%,
+    rgba(183, 233, 255, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(227, 238, 255, 1) 0%,
+    rgba(183, 233, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3eeff",endColorstr="#b7e9ff",GradientType=1);
+
+  z-index: 1000;
+}
+
+.headshot {
+  z-index: 100;
+  position: relative;
+}
+
+.circle-bottom {
+  background: rgb(117, 169, 215);
+  background: -moz-linear-gradient(
+    214deg,
+    rgba(117, 169, 215, 1) 0%,
+    rgba(250, 194, 115, 1) 72%
+  );
+  background: -webkit-linear-gradient(
+    214deg,
+    rgba(117, 169, 215, 1) 0%,
+    rgba(250, 194, 115, 1) 72%
+  );
+  background: linear-gradient(
+    214deg,
+    rgba(117, 169, 215, 1) 0%,
+    rgba(250, 194, 115, 1) 72%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#75a9d7",endColorstr="#fac273",GradientType=1);
+
+  z-index: -50;
+
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+
+  top: 100px;
+}
+
+.circle-top {
+  background: rgb(231, 112, 255);
+  background: -moz-linear-gradient(
+    128deg,
+    rgba(231, 112, 255, 1) 0%,
+    rgba(179, 119, 207, 1) 31%,
+    rgba(118, 166, 139, 1) 74%,
+    rgba(45, 126, 49, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    128deg,
+    rgba(231, 112, 255, 1) 0%,
+    rgba(179, 119, 207, 1) 31%,
+    rgba(118, 166, 139, 1) 74%,
+    rgba(45, 126, 49, 1) 100%
+  );
+  background: linear-gradient(
+    128deg,
+    rgba(231, 112, 255, 1) 0%,
+    rgba(179, 119, 207, 1) 31%,
+    rgba(118, 166, 139, 1) 74%,
+    rgba(45, 126, 49, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e770ff",endColorstr="#2d7e31",GradientType=1);
+
+  z-index: -20;
+
+  width: 40%;
+  height: 40%;
+  border-radius: 10%;
+  position: absolute;
+
+  top: 60px;
+  right: 40px;
+}
+
+/* Medium Viewports */
+@media only screen and (max-width: 1199px) {
+  .headshot {
+    bottom: 0px;
+    position: absolute;
+  }
+
+  .circle-bottom {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Medium Viewports */
+@media only screen and (max-width: 768px) {
+  .headshot {
+    bottom: 0px;
+    position: absolute;
+  }
+
+  .circle-bottom {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Small Viewports */
+@media only screen and (max-width: 768px) {
+  .headshot {
+    position: relative;
+  }
+
+  .circle-bottom {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+/* Back circle fix */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .circle-bottom {
+    width: 200px;
+    height: 200px;
+
+    bottom: 0px;
+  }
+  .circle-top {
+    width: 100px;
+    height: 100px;
+
+    bottom: 100px;
+  }
+}
+
+/* ------------------------- About ------------------------- */
+.rgb-strip {
+  background: rgb(255, 232, 194);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 232, 194, 1) 0%,
+    rgba(126, 213, 255, 1) 61%,
+    rgba(142, 152, 247, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 232, 194, 1) 0%,
+    rgba(126, 213, 255, 1) 61%,
+    rgba(142, 152, 247, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 232, 194, 1) 0%,
+    rgba(126, 213, 255, 1) 61%,
+    rgba(142, 152, 247, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe8c2",endColorstr="#8e98f7",GradientType=1);
+
+  height: 10px;
+}
+
+.skill-card {
+  padding-bottom: 20px;
+}
+
+.skill-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.glance-section {
+  background: rgb(228, 255, 210);
+  background: -moz-linear-gradient(
+    24deg,
+    rgba(228, 255, 210, 1) 0%,
+    rgba(185, 255, 140, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    24deg,
+    rgba(228, 255, 210, 1) 0%,
+    rgba(185, 255, 140, 1) 100%
+  );
+  background: linear-gradient(
+    24deg,
+    rgba(228, 255, 210, 1) 0%,
+    rgba(185, 255, 140, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4ffd2",endColorstr="#b9ff8c",GradientType=1);
+}
+
+.about-circle-bottom {
+  background: rgb(255, 252, 237);
+  background: -moz-linear-gradient(
+    24deg,
+    rgba(255, 252, 237, 1) 0%,
+    rgba(255, 237, 208, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    24deg,
+    rgba(255, 252, 237, 1) 0%,
+    rgba(255, 237, 208, 1) 100%
+  );
+  background: linear-gradient(
+    24deg,
+    rgba(255, 252, 237, 1) 0%,
+    rgba(255, 237, 208, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffced",endColorstr="#ffedd0",GradientType=1);
+
+  z-index: -20;
+
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: absolute;
+
+  top: 10%;
+  left: -20%;
+}
+
+.content-section {
+  background: rgb(250, 230, 181);
+  background: -moz-linear-gradient(
+    250deg,
+    rgba(250, 230, 181, 1) 0%,
+    rgba(255, 246, 220, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    250deg,
+    rgba(250, 230, 181, 1) 0%,
+    rgba(255, 246, 220, 1) 100%
+  );
+  background: linear-gradient(
+    250deg,
+    rgba(250, 230, 181, 1) 0%,
+    rgba(255, 246, 220, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fae6b5",endColorstr="#fff6dc",GradientType=1);
+
+  padding: 20px;
+
+  box-shadow: 0px 0px 2px 0px grey;
+
+  transition: all 0.333;
+}
+
+/* ------------------------- Work Pages ------------------------- */
+.hero-image {
+  min-height: 100%;
+  width: 100%;
+}
+
+.hero-header {
+  font-weight: 700;
+  color: white;
+}
+
+.picture-highlight {
+  padding: 50px;
+}
+
+.overview-highlight {
+  background: #dbdbdb;
+}
+
+.solution-section {
+  background: rgb(219, 250, 191);
+}
+
+.conclusion-section {
+  background: rgb(47, 47, 47);
+  background: -moz-linear-gradient(
+    38deg,
+    rgba(47, 47, 47, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    38deg,
+    rgba(47, 47, 47, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    38deg,
+    rgba(47, 47, 47, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f2f",endColorstr="#000000",GradientType=1);
+
+  color: white;
+}
+
+.persona {
+  padding: 20px;
+  background: rgb(250, 230, 181);
+  background: -moz-linear-gradient(
+    250deg,
+    rgba(250, 230, 181, 1) 0%,
+    rgba(255, 246, 220, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    250deg,
+    rgba(250, 230, 181, 1) 0%,
+    rgba(255, 246, 220, 1) 100%
+  );
+  background: linear-gradient(
+    250deg,
+    rgba(250, 230, 181, 1) 0%,
+    rgba(255, 246, 220, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fae6b5",endColorstr="#fff6dc",GradientType=1);
+}
+
+/* @@@@@@@@@@ HW Page @@@@@@@@@@ */
+.hw-alien-top {
+  z-index: 100;
+
+  width: 20%;
+  position: absolute;
+
+  right: 20%;
+  max-width: 400px;
+}
+
+.hw {
+  background: #d59f63;
+}
+
+/* @@@@@@@@@@ Adobe Page @@@@@@@@@@ */
+.aa {
+  background: #ff5a5f;
+}
+
+.aa-image-fix {
+  padding-left: 5%;
+}
+
+/* Small Viewports Only */
+@media only screen and (max-width: 576px) {
+  .aa-image-fix {
+    padding-left: 0%;
+  }
+}
+
+.feature-box {
+  transition: all 0.333s;
+}
+
+.dotted-bg {
+  background-image: radial-gradient(hsla(209, 100%, 47%, 1) 5%, transparent 0);
+  background-size: 30px 30px;
+}
