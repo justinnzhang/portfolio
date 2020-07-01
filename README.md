@@ -2,8 +2,7 @@
 https://justinzhang.ca
 
 ### Bootstrapped With
-I think you should use an
-`<addr>` element here instead.
+`<create-react-app>` & `<Gatsby new>` 
 
 ### Tools Used
 - [React](https://reactjs.org/)
