@@ -67,7 +67,7 @@ const IndexPage = () => {
 
   return (
     <div>
-      <SEO title="Justin Zhang - Welcome" />
+      <SEO title="Justin Zhang's Portfolio | Business - Technology - Design" description="Welcome to my personal portfolio! Here, you can find a representation of the projects that I've been able to work on." type="website"/>
       <Navbar />
       <Container fluid style={{ overflow: "hidden" }}>
         <Modal show={show} onHide={handleClose} centered>

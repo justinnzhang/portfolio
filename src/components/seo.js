@@ -10,8 +10,9 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import favicon from "../images/favicon.ico"
+import publicImage from "../images/headshot.jpg"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, type }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,9 +31,7 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={title}
       titleTemplate={`%s`}
       meta={[
@@ -41,16 +40,30 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          name: "author",
+          content: "Justin Zhang",
+        },
+        { name: "image", content: publicImage },
+        { name: "twitter:site", content: "justinzhang.ca" },
+        { name: "twitter:creator", content: "Justin Zhang" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:image", content: publicImage },
+        {
+          property: "og:title",
           content: title,
         },
+        { property: "og:site_name", content: "Justin Zhang's Portfolio" },
         {
-          property: `og:description`,
+          property: "og:description",
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: "og:type",
+          content: type,
+        },
+        {
+          property: "og:image",
+          content: publicImage,
         },
       ].concat(meta)}
     >

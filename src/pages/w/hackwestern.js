@@ -25,7 +25,12 @@ const HackWestern = () => {
 
   return (
     <>
-      <SEO title="Justin Zhang - Hack Western 6" />
+      <SEO
+        title="Justin Zhang - Hack Western 6"
+        description="Bridging the gap between digital and physical hackathon
+                    design in my role as a Product Desginer"
+        type="article"
+      />
       <Navbar />
       <Container fluid style={{ zIndex: "0" }}>
         <motion.div

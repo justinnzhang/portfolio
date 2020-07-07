@@ -40,7 +40,7 @@ const item = {
 const About = () => {
   return (
     <>
-      <SEO title="Justin Zhang - About" />
+      <SEO title="Justin Zhang - About" description="A look at what makes me unique, and where I came from. Let's get connected!" type="website"/>
       <Navbar />
       <Container fluid>
         <motion.div

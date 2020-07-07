@@ -19,7 +19,12 @@ import Button from "react-bootstrap/Button"
 const AdobeJam = () => {
   return (
     <>
-      <SEO title="Justin Zhang - Adobe Jam " />
+      <SEO
+        title="Justin Zhang - Adobe Jam"
+        description="Ideating a new way to connect users on the Airbnb platform
+                    during a 48 hour Adobe College Creative Jam"
+        type="article"
+      />
       <Navbar />
       <Container fluid style={{ zIndex: "0" }}>
         <motion.div

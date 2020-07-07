@@ -5,6 +5,7 @@ import "../App.css"
 import "./pages.css"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import SEO from "../components/seo"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -28,6 +29,11 @@ const Fun = () => {
 
   return (
     <>
+      <SEO
+        title="Justin Zhang - Fun"
+        description="My personal video and animation projects. Check them out here!"
+        type="website"
+      />
       <Navbar />
       <Container fluid>
         <motion.div

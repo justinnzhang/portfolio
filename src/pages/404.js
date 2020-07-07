@@ -16,7 +16,7 @@ import Button from "react-bootstrap/Button"
 const NotFound = () => {
   return (
     <>
-      <SEO title="Justin Zhang - 404" />
+      <SEO title="Justin Zhang - 404" description="Something went wrong :(" type="website"/>
       <Navbar />
       <Container fluid>
         <motion.div

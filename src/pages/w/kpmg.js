@@ -23,7 +23,12 @@ const KPMG = () => {
 
   return (
     <>
-      <SEO title="Justin Zhang - KPMG" />
+      <SEO
+        title="Justin Zhang - KPMG"
+        description="Representing Ontario on the national stage to answer the
+                    question: How might we give back time?"
+        type="article"
+      />
       <Navbar />
       <Container fluid style={{ zIndex: "0" }}>
         <motion.div
