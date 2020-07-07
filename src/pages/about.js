@@ -8,6 +8,9 @@ import Navbar from "../components/Navbar"
 import Emoji from "../components/Emoji"
 import SEO from "../components/seo"
 
+import { IconContext } from "react-icons"
+import { AiOutlineCode, AiOutlineTool, AiOutlineCamera } from "react-icons/ai"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Container from "react-bootstrap/Container"
@@ -263,6 +266,11 @@ const About = () => {
               <Row>
                 <Col>
                   <div className="skill-card">
+                    <IconContext.Provider value={{ className: "xl" }}>
+                      <div>
+                        <AiOutlineCode />
+                      </div>
+                    </IconContext.Provider>
                     <h3 className="lg">Development Languages</h3>
                     <motion.ul
                       initial="hidden"
@@ -282,6 +290,12 @@ const About = () => {
                 </Col>
                 <Col md={4} sm={12}>
                   <div className="skill-card">
+                    <IconContext.Provider value={{ className: "xl" }}>
+                      <div>
+                        <AiOutlineTool />
+                      </div>
+                    </IconContext.Provider>
+
                     <h3 className="lg">Tools & Frameworks</h3>
                     <motion.ul
                       initial="hidden"
@@ -311,6 +325,11 @@ const About = () => {
                 </Col>
                 <Col md={4} sm={12}>
                   <div className="skill-card">
+                  <IconContext.Provider value={{ className: "xl" }}>
+                      <div>
+                        <AiOutlineCamera />
+                      </div>
+                    </IconContext.Provider>
                     <h3 className="lg">Camera Equipment</h3>
                     <motion.ul
                       initial="hidden"

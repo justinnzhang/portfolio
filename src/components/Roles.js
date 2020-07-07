@@ -1,4 +1,6 @@
 import React from "react"
+import { AiOutlineTool, AiOutlineTeam, AiOutlineUser } from "react-icons/ai"
+import { IconContext } from "react-icons"
 
 import "./components.css"
 import "../App.css"
@@ -13,18 +15,33 @@ const Roles = props => {
       <Container>
         <Row>
           <Col className="text-left" sm={4}>
+            <IconContext.Provider value={{ className: "lg" }}>
+              <div>
+                <AiOutlineUser />
+              </div>
+            </IconContext.Provider>
             <p style={{ lineHeight: "10px" }} className="font-weight-bold pt-2">
               My Roles
             </p>
             <p>{props.roles}</p>
           </Col>
           <Col className="text-left" sm={4}>
+            <IconContext.Provider value={{ className: "lg" }}>
+              <div>
+                <AiOutlineTeam />
+              </div>
+            </IconContext.Provider>
             <p style={{ lineHeight: "10px" }} className="font-weight-bold pt-2">
               Team Members
             </p>
             <p>{props.team}</p>
           </Col>
           <Col className="text-left" sm={4}>
+            <IconContext.Provider value={{ className: "lg" }}>
+              <div>
+                <AiOutlineTool />
+              </div>
+            </IconContext.Provider>
             <p style={{ lineHeight: "10px" }} className="font-weight-bold pt-2">
               Tools
             </p>
