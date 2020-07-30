@@ -106,24 +106,37 @@ const KPMG = () => {
                     </p>
                   </Col>
                 </Row>
+              </Fade>
+            </Container>
+          </Row>
+
+          <Row
+            className="mt-5 p-5"
+            style={{
+              backgroundColor: highlightColor,
+              color: "white",
+            }}
+          >
+            <Col>
+              <Container>
                 <Row className="text-center">
                   <Col>
-                    <div
-                      style={{
-                        backgroundColor: highlightColor,
-                        color: "white",
-                      }}
-                      className="p-4"
-                    >
-                      <h2 className="font-weight-bold">
-                        Part 1 - Regional Round
-                      </h2>
-                      <p className="font-weight-bold">12 Hours</p>
-                    </div>
+                    <Fade bottom duration={666} distance="50px">
+                      <div className="">
+                        <h2 className="font-weight-bold">
+                          Part 1 - Regional Round
+                        </h2>
+                        <p className="font-weight-bold">48 Hours</p>
+                      </div>
+                    </Fade>
                   </Col>
                 </Row>
-              </Fade>
+              </Container>
+            </Col>
+          </Row>
 
+          <Row>
+            <Container>
               <Fade bottom duration={666} distance="50px">
                 <Row className="mt-5">
                   <Col md={4}>
@@ -285,12 +298,15 @@ const KPMG = () => {
               </Fade>
             </Container>
           </Row>
-          <Row className="solution-section mt-5 pb-4">
+
+          <Row className="mt-5 pb-4">
             <Container>
               <Fade bottom duration={666} distance="50px">
                 <Row className="mt-5">
                   <Col md={4}>
-                    <h2 className="font-weight-bold">The Solution</h2>
+                    <h2 className="font-weight-bold solution-color">
+                      The Solution
+                    </h2>
                   </Col>
                   <Col md={8}>
                     <p>
@@ -313,7 +329,7 @@ const KPMG = () => {
               <Fade bottom duration={666} distance="50px">
                 <Row className="mt-5">
                   <Col md={4}>
-                    <h2 className="font-weight-bold">
+                    <h2 className="font-weight-bold solution-color">
                       Key Performance Indicators
                     </h2>
                   </Col>
@@ -340,7 +356,9 @@ const KPMG = () => {
               <Fade bottom duration={666} distance="50px">
                 <Row className="mt-5">
                   <Col md={4}>
-                    <h2 className="font-weight-bold">Competitive Analysis</h2>
+                    <h2 className="font-weight-bold solution-color">
+                      Competitive Analysis
+                    </h2>
                   </Col>
                   <Col md={8}>
                     <p>
@@ -398,27 +416,29 @@ const KPMG = () => {
             </Container>
           </Row>
 
-          <Row className="mt-5 ">
-            <Container>
-              <Fade bottom duration={666} distance="50px">
+          <Row
+            className="mt-5 p-5"
+            style={{
+              backgroundColor: highlightColor,
+              color: "white",
+            }}
+          >
+            <Col>
+              <Container>
                 <Row className="text-center">
                   <Col>
-                    <div
-                      style={{
-                        backgroundColor: highlightColor,
-                        color: "white",
-                      }}
-                      className="p-4"
-                    >
-                      <h2 className="font-weight-bold">
-                        Part 2 - National Round
-                      </h2>
-                      <p className="font-weight-bold">24 Hours</p>
-                    </div>
+                    <Fade bottom duration={666} distance="50px">
+                      <div className="">
+                        <h2 className="font-weight-bold">
+                          Part 2 - National Round
+                        </h2>
+                        <p className="font-weight-bold">24 Hours</p>
+                      </div>
+                    </Fade>
                   </Col>
                 </Row>
-              </Fade>
-            </Container>
+              </Container>
+            </Col>
           </Row>
 
           <Row>
@@ -426,8 +446,14 @@ const KPMG = () => {
               <Fade bottom duration={666} distance="50px">
                 <Row className="mt-5">
                   <Col className="text-center">
-                    <p>Watch the video recap!</p>
-                    <ResponsiveEmbed aspectRatio="16by9">
+                    <h2 className="font-weight-bold mb-3">
+                      Watch The Video Recap!
+                    </h2>
+                    <ResponsiveEmbed
+                      aspectRatio="16by9"
+                      className="shadow"
+                      style={{ borderRadius: "8px" }}
+                    >
                       <iframe
                         width="430"
                         height="242"

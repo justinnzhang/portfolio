@@ -67,7 +67,11 @@ const IndexPage = () => {
 
   return (
     <div>
-      <SEO title="Justin Zhang's Portfolio | Business - Technology - Design" description="Welcome to my personal portfolio! Here, you can find a representation of the projects that I've been able to work on." type="website"/>
+      <SEO
+        title="Justin Zhang's Portfolio | Business - Technology - Design"
+        description="Welcome to my personal portfolio! Here, you can find a representation of the projects that I've been able to work on."
+        type="website"
+      />
       <Navbar />
       <Container fluid style={{ overflow: "hidden" }}>
         <Modal show={show} onHide={handleClose} centered>
@@ -164,8 +168,8 @@ const IndexPage = () => {
                             <strong>Business</strong>,
                             <strong>Technology</strong>, and{" "}
                             <strong>Design,</strong> I am a curious and
-                            passionate student dreaming of breaking into Product
-                            Management!
+                            passionate student looking to break into{" "}
+                            <strong>Product Management!</strong>
                           </p>
                         </motion.div>
                       </motion.div>
@@ -264,6 +268,8 @@ const IndexPage = () => {
                   lg={3}
                   as={Link}
                   to="/w/casefoundry"
+                  locked={false}
+                  unfinished={false}
                   style={{ textDecoration: "none" }}
                 >
                   <Card
@@ -320,24 +326,36 @@ const IndexPage = () => {
                     color="0, 93, 170"
                   />
                 </Col>
-                <Col lg={6} md={6}>
+                <Col
+                  lg={6}
+                  md={6}
+                  as={Link}
+                  to="/w/wfn"
+                  style={{ textDecoration: "none" }}
+                >
                   <Card
                     role="VP of Design"
                     name="Western Founders Network"
                     locked={false}
-                    unfinished={true}
+                    unfinished={false}
                     image="https://justinzhang.imfast.io/landing/wfn.png"
                     description="Building the visual and motion brand of the largest Business & Technology club on campus over two years of time."
                     color="0, 0, 0"
                   />
                 </Col>
-                <Col lg={6} md={6}>
+                <Col
+                  lg={6}
+                  md={6}
+                  as={Link}
+                  to="/w/westernhousing"
+                  style={{ textDecoration: "none" }}
+                >
                   {" "}
                   <Card
                     role="Marketing Assistant"
                     name="Western University"
                     locked={false}
-                    unfinished={true}
+                    unfinished={false}
                     image="https://justinzhang.imfast.io/landing/western.jpg"
                     description="How might I build a video brand to reach university students?"
                     color="79, 38, 131"

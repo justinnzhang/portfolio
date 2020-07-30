@@ -93,7 +93,10 @@ const Fun = () => {
                                 Documenting our team's experience in Toronto for
                                 the National Round while representing Ontario.
                               </p>
-                              <ResponsiveEmbed aspectRatio="16by9">
+                              <ResponsiveEmbed
+                                aspectRatio="16by9"
+                                style={{ borderRadius: "8px" }}
+                              >
                                 <iframe
                                   width="430"
                                   height="242"
@@ -115,7 +118,10 @@ const Fun = () => {
                                 Documenting the events that happen during
                                 Western University's famous Orientation Week.
                               </p>
-                              <ResponsiveEmbed aspectRatio="16by9">
+                              <ResponsiveEmbed
+                                aspectRatio="16by9"
+                                style={{ borderRadius: "8px" }}
+                              >
                                 <iframe
                                   width="277"
                                   height="155"
@@ -138,7 +144,10 @@ const Fun = () => {
                                 university, my friends and I explore the inner
                                 beauty of our hometown.
                               </p>
-                              <ResponsiveEmbed aspectRatio="16by9">
+                              <ResponsiveEmbed
+                                aspectRatio="16by9"
+                                style={{ borderRadius: "8px" }}
+                              >
                                 <iframe
                                   width="277"
                                   height="155"
@@ -161,7 +170,10 @@ const Fun = () => {
                                 was able to bond over the course of the school
                                 year.
                               </p>
-                              <ResponsiveEmbed aspectRatio="16by9">
+                              <ResponsiveEmbed
+                                aspectRatio="16by9"
+                                style={{ borderRadius: "8px" }}
+                              >
                                 <iframe
                                   width="277"
                                   height="155"
@@ -233,7 +245,10 @@ const Fun = () => {
                               initial={{ opacity: 0 }}
                               animate={{ opacity: 1 }}
                             >
-                              <ResponsiveEmbed aspectRatio="16by9">
+                              <ResponsiveEmbed
+                                aspectRatio="16by9"
+                                style={{ borderRadius: "8px" }}
+                              >
                                 <iframe
                                   width="890"
                                   height="501"
@@ -251,7 +266,10 @@ const Fun = () => {
                               initial={{ opacity: 0 }}
                               animate={{ opacity: 1 }}
                             >
-                              <ResponsiveEmbed aspectRatio="16by9">
+                              <ResponsiveEmbed
+                                aspectRatio="16by9"
+                                style={{ borderRadius: "8px" }}
+                              >
                                 <iframe
                                   width="430"
                                   height="242"
@@ -269,7 +287,10 @@ const Fun = () => {
                               initial={{ opacity: 0 }}
                               animate={{ opacity: 1 }}
                             >
-                              <ResponsiveEmbed aspectRatio="16by9">
+                              <ResponsiveEmbed
+                                aspectRatio="16by9"
+                                style={{ borderRadius: "8px" }}
+                              >
                                 <iframe
                                   width="430"
                                   height="242"

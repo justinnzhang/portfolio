@@ -114,8 +114,8 @@
 
   z-index: -50;
 
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
   position: absolute;
 
@@ -299,29 +299,14 @@
 }
 
 .content-section {
-  background: rgb(250, 230, 181);
-  background: -moz-linear-gradient(
-    250deg,
-    rgba(250, 230, 181, 1) 0%,
-    rgba(255, 246, 220, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    250deg,
-    rgba(250, 230, 181, 1) 0%,
-    rgba(255, 246, 220, 1) 100%
-  );
-  background: linear-gradient(
-    250deg,
-    rgba(250, 230, 181, 1) 0%,
-    rgba(255, 246, 220, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fae6b5",endColorstr="#fff6dc",GradientType=1);
+  background: rgb(227, 238, 255);
 
   padding: 20px;
 
   box-shadow: 0px 0px 2px 0px grey;
 
   transition: all 0.333;
+  border-radius: 8px;
 }
 
 /* ------------------------- Work Pages ------------------------- */
@@ -344,7 +329,7 @@
 }
 
 .solution-section {
-  background: rgb(219, 250, 191);
+  background: #a8e0af;
 }
 
 .conclusion-section {

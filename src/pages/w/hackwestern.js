@@ -129,6 +129,35 @@ const HackWestern = () => {
             </Container>
           </Row>
 
+          <Row className="mt-5">
+            <Container>
+              <Fade bottom duration={666} distance="50px" delay={333}>
+                <Row>
+                  <Col className="text-center ">
+                    <h2 className="font-weight-bold mb-3">
+                      See The Recap Video
+                    </h2>
+                    <ResponsiveEmbed
+                      aspectRatio="16by9"
+                      className="shadow"
+                      style={{ borderRadius: "8px" }}
+                    >
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube-nocookie.com/embed/P5_DZDgfH1c"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        title="recap video"
+                      ></iframe>
+                    </ResponsiveEmbed>
+                  </Col>
+                </Row>
+              </Fade>
+            </Container>
+          </Row>
+
           <Row className="mt-5 ">
             <Container>
               <Fade bottom duration={666} distance="50px">
@@ -209,11 +238,13 @@ const HackWestern = () => {
             </Container>
           </Row>
 
-          <Row className="pt-5 pb-5 mt-5 solution-section">
+          <Row className="pt-5 pb-5 mt-5">
             <Container>
               <Row className="">
                 <Col md={4}>
-                  <h2 className="font-weight-bold">The Solution</h2>
+                  <h2 className="font-weight-bold solution-color">
+                    The Solution
+                  </h2>
                 </Col>
                 <Col md={8}>
                   <Fade bottom duration={666} distance="50px">
@@ -248,13 +279,10 @@ const HackWestern = () => {
             </Container>
           </Row>
 
-          <Row className="text-center solution-section">
+          <Row className="text-center">
             <Col md={4} className="picture-highlight">
               <Fade bottom duration={666} distance="50px" delay={300}>
-                <p>
-                  The final design system, packaged into a brandbook that was
-                  used by the team
-                </p>
+                <h4 className="solution-color">The Design System</h4>
                 <Image
                   src="https://justinzhang.imfast.io/hackwestern/designsystem.png"
                   fluid
@@ -264,8 +292,14 @@ const HackWestern = () => {
             </Col>
             <Col md={4} className="picture-highlight ">
               <Fade bottom duration={666} distance="50px" delay={400}>
-                <p>Hack Western 6 video</p>
-                <ResponsiveEmbed aspectRatio="16by9" className="shadow">
+                <h4 className="solution-color mb-5">
+                  Hack Western 6 Opening Ceremonies
+                </h4>
+                <ResponsiveEmbed
+                  aspectRatio="16by9"
+                  className="shadow"
+                  style={{ borderRadius: "8px" }}
+                >
                   <iframe
                     width="560"
                     height="315"
@@ -281,9 +315,9 @@ const HackWestern = () => {
             </Col>
             <Col md={4} className="picture-highlight">
               <Fade bottom duration={666} distance="50px" delay={500}>
-                <p>
-                  A collection of posts and graphics that were used for branding
-                </p>
+                <h4 className="solution-color">
+                  A Collection of Posts and Graphics
+                </h4>
                 <Image
                   src="https://justinzhang.imfast.io/hackwestern/completedassets.png"
                   fluid

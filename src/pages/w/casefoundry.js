@@ -15,7 +15,7 @@ import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
 import Button from "react-bootstrap/Button"
 
-const AdobeJam = () => {
+const CaseFoundry = () => {
   return (
     <>
       <SEO
@@ -76,7 +76,7 @@ const AdobeJam = () => {
 
           <Roles
             roles="Co-Founder, Head of Product, Head of Engineering"
-            team="Amanda Adam, Jackie Chen, Eric Kogut"
+            team="Amanda Adam, Jackie Chen, Eric Kogut, Amy Zhang, Frank Huang"
             tools="Github, React, Express, Node, MongoDB, AWS, Adobe
                     Illustrator"
           />
@@ -105,4 +105,4 @@ const AdobeJam = () => {
   )
 }
 
-export default AdobeJam
+export default CaseFoundry
