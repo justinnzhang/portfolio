@@ -75,7 +75,7 @@ const KPMG = () => {
                 <Col>
                   <Image
                     fluid
-                    src="https://justinzhang.imfast.io/kpmg/kiclanding.png"
+                    src="https://doixzan7hf4ti.cloudfront.net/kpmg/kiclanding.png"
                     className="aa-image-fix"
                   />
                 </Col>
@@ -181,7 +181,7 @@ const KPMG = () => {
                   </Col>
                   <Col md={8}>
                     <Image
-                      src="https://justinzhang.imfast.io/landing/kpmglogo.png"
+                      src="https://doixzan7hf4ti.cloudfront.net/logos/kpmglogo.png"
                       alt="KPMG Logo"
                       fluid
                       style={{ width: "20%" }}
@@ -254,7 +254,7 @@ const KPMG = () => {
                 <Row className="mt-5 persona shadow-sm">
                   <Col md={4} className="p-5">
                     <Image
-                      src="https://justinzhang.imfast.io/kpmg/jennypic.jpeg"
+                      src="https://doixzan7hf4ti.cloudfront.net/kpmg/jennypic.jpeg"
                       roundedCircle
                       fluid
                     />
@@ -288,7 +288,7 @@ const KPMG = () => {
                       A team picture before pitching!
                     </p>
                     <Image
-                      src="https://justinzhang.imfast.io/kpmg/regionalteampic.jpg"
+                      src="https://doixzan7hf4ti.cloudfront.net/kpmg/regionalteampic.jpg"
                       fluid
                       alt="People smiling in a group pose"
                       className="shadow"
@@ -405,7 +405,7 @@ const KPMG = () => {
                       A team picture after pitching!
                     </p>
                     <Image
-                      src="https://justinzhang.imfast.io/kpmg/round1.jpg"
+                      src="https://doixzan7hf4ti.cloudfront.net/kpmg/round1.jpg"
                       fluid
                       alt="Group picture holding our certificates"
                       className="shadow"
@@ -567,7 +567,7 @@ const KPMG = () => {
                       During our final pitch, presenting our opening video
                     </p>
                     <Image
-                      src="https://justinzhang.imfast.io/kpmg/presentation.jpg"
+                      src="https://doixzan7hf4ti.cloudfront.net/kpmg/presentation.jpg"
                       fluid
                       alt="Group of people presenting"
                       className="shadow"
@@ -607,7 +607,7 @@ const KPMG = () => {
                       Congratulations Team Alberta!
                     </p>
                     <Image
-                      src="https://justinzhang.imfast.io/kpmg/grouppicture.jpg"
+                      src="https://doixzan7hf4ti.cloudfront.net/kpmg/grouppicture.jpg"
                       fluid
                       alt="Group of people posing for a photo"
                       className="shadow"

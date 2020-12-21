@@ -40,7 +40,11 @@ const item = {
 const About = () => {
   return (
     <>
-      <SEO title="Justin Zhang - About" description="A look at what makes me unique, and where I came from. Let's get connected!" type="website"/>
+      <SEO
+        title="Justin Zhang - About"
+        description="A look at what makes me unique, and where I came from. Let's get connected!"
+        type="website"
+      />
       <Navbar />
       <Container fluid>
         <motion.div
@@ -68,10 +72,23 @@ const About = () => {
                   >
                     <h1 className="font-weight-bold">At A Glance</h1>
                     <p>
-                      I am currently the Product Team Lead at{" "}
+                      I am currently the Co-Founder and Head of Product at{" "}
                       <a
                         style={{
-                          color: "#4F2683",
+                          color: "#005DAA",
+                          textDecoration: "underline",
+                        }}
+                        className="font-weight-medium"
+                        href="https://casecom.app"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        CaseCom
+                      </a>
+                      , and the Product Team Lead at{" "}
+                      <a
+                        style={{
+                          color: "#005DAA",
                           textDecoration: "underline",
                         }}
                         className="font-weight-medium"
@@ -80,32 +97,6 @@ const About = () => {
                         target="_blank"
                       >
                         Hack Western
-                      </a>
-                      , a Summer Technical Systems Analyst Intern at the{" "}
-                      <a
-                        style={{
-                          color: "#005DAA",
-                          textDecoration: "underline",
-                        }}
-                        className="font-weight-medium"
-                        href="https://www.rbcroyalbank.com/personal.html"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        Royal Bank of Canada
-                      </a>{" "}
-                      and a part time Publications Designer at{" "}
-                      <a
-                        style={{
-                          color: "#00538a",
-                          textDecoration: "underline",
-                        }}
-                        className="font-weight-medium"
-                        href="https://www.munichre.com/ca-life/en.html"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        Munich Re Canada
                       </a>
                       .
                     </p>
@@ -132,7 +123,7 @@ const About = () => {
                     }}
                   >
                     <Image
-                      src="https://justinzhang.imfast.io/landing/headshot.png"
+                      src="https://doixzan7hf4ti.cloudfront.net/other/headshot.jpg"
                       fluid
                       rounded
                       alt="Justin Zhang headshot"
@@ -325,7 +316,7 @@ const About = () => {
                 </Col>
                 <Col md={4} sm={12}>
                   <div className="skill-card">
-                  <IconContext.Provider value={{ className: "xl" }}>
+                    <IconContext.Provider value={{ className: "xl" }}>
                       <div>
                         <AiOutlineCamera />
                       </div>

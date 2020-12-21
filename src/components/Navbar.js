@@ -26,7 +26,7 @@ const Landing = () => {
               Fun
             </Nav.Link>
             <Nav.Link
-              href="https://justinzhang.imfast.io/JustinZhangResume.pdf"
+              href="https://doixzan7hf4ti.cloudfront.net/other/JustinZhangResume.pdf"
               target="_blank"
               className="font-weight-medium"
               style={{ color: "#507899" }}

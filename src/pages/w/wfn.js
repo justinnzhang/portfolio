@@ -21,9 +21,9 @@ const WesternFoundersNetwork = () => {
     <>
       <SEO
         title="Justin Zhang - Western Founders Network"
-        description="Co-Founded the next generation of Case Competitions. By
-                    students, for students."
+        description="Leading the Design direction of Western University's largest business and technology club"
         type="article"
+        url="/w/wfn"
       />
       <Navbar />
       <Container fluid style={{ zIndex: "0" }}>
@@ -65,7 +65,7 @@ const WesternFoundersNetwork = () => {
                 <Col>
                   <Image
                     fluid
-                    src="https://justinzhang.imfast.io/wfn/wfnteamphoto.jpg"
+                    src="https://doixzan7hf4ti.cloudfront.net/WFN/wfnteamphoto.jpg"
                     rounded
                   />
                 </Col>
@@ -144,9 +144,9 @@ const WesternFoundersNetwork = () => {
             <Container>
               <Fade bottom duration={666} distance="50px">
                 <Row className="mt-5">
-                  <Col className="text-center" md={6} sm={12}>
+                  <Col className="text-center mb-5" md={6} sm={12}>
                     <h3 className="font-weight-medium mb-3">
-                      Welcome to Western Founders Network
+                      FutureView Conference 2019 Promotion
                     </h3>
                     <ResponsiveEmbed
                       aspectRatio="16by9"
@@ -177,6 +177,55 @@ const WesternFoundersNetwork = () => {
                         width="430"
                         height="242"
                         src="https://www.youtube.com/embed/my5B9GpCWGk"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        title="Product Design Sprint Advertisement"
+                      ></iframe>
+                    </ResponsiveEmbed>
+                  </Col>
+                </Row>
+              </Fade>
+            </Container>
+          </Row>
+
+          <Row>
+            <Container>
+              <Fade bottom duration={666} distance="50px">
+                <Row className="mt-5">
+                  <Col className="text-center mb-5" md={6} sm={12}>
+                    <h3 className="font-weight-medium mb-3">
+                      Startup Showcase 2018 Recap
+                    </h3>
+                    <ResponsiveEmbed
+                      aspectRatio="16by9"
+                      className="shadow"
+                      style={{ borderRadius: "8px" }}
+                    >
+                      <iframe
+                        width="430"
+                        height="242"
+                        src="https://www.youtube.com/embed/wAF15A1XV4U"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        title="Futureview Teaser"
+                      ></iframe>
+                    </ResponsiveEmbed>
+                  </Col>
+                  <Col className="text-center">
+                    <h3 className="font-weight-medium mb-3">
+                      Startup Showcase 2018 Promotion
+                    </h3>
+                    <ResponsiveEmbed
+                      aspectRatio="16by9"
+                      className="shadow"
+                      style={{ borderRadius: "8px" }}
+                    >
+                      <iframe
+                        width="430"
+                        height="242"
+                        src="https://www.youtube.com/embed/sLZxaZn7fyQ"
                         frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen

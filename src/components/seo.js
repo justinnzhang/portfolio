@@ -10,9 +10,8 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import favicon from "../images/favicon.ico"
-import publicImage from "../images/headshot.jpg"
 
-function SEO({ description, lang, meta, title, type }) {
+function SEO({ description, lang, meta, title, type, url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -43,11 +42,14 @@ function SEO({ description, lang, meta, title, type }) {
           name: "author",
           content: "Justin Zhang",
         },
-        { name: "image", content: publicImage },
-        { name: "twitter:site", content: "justinzhang.ca" },
+        { name: "og:url", content: `https://justinzhang.ca${url}` },
+        { name: "twitter:site", content: "https://justinzhang.ca" },
         { name: "twitter:creator", content: "Justin Zhang" },
         { name: "twitter:title", content: title },
-        { name: "twitter:image", content: publicImage },
+        {
+          name: "twitter:image",
+          content: "https://doixzan7hf4ti.cloudfront.net/other/headshot.png",
+        },
         {
           property: "og:title",
           content: title,
@@ -63,7 +65,7 @@ function SEO({ description, lang, meta, title, type }) {
         },
         {
           property: "og:image",
-          content: publicImage,
+          content: "https://doixzan7hf4ti.cloudfront.net/other/headshot.png",
         },
       ].concat(meta)}
     >
@@ -76,6 +78,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  url: "/",
 }
 
 SEO.propTypes = {
@@ -83,6 +86,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  url: PropTypes.string,
 }
 
 export default SEO

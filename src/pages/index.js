@@ -177,7 +177,7 @@ const IndexPage = () => {
                   </Col>
                   <Col md={4}>
                     <Image
-                      src="https://justinzhang.imfast.io/landing/headshotcutout.png"
+                      src="https://doixzan7hf4ti.cloudfront.net/other/headshotcutout.png"
                       fluid
                       rounded
                       className="mt-5 headshot"
@@ -221,7 +221,7 @@ const IndexPage = () => {
                     name="Hack Western"
                     locked={false}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/hwlogo.png"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/hwlogo.png"
                     description="Bridging the gap between virtual and physical hackathon design for over 500 students across Canada"
                     color="30, 9, 59"
                   />
@@ -239,7 +239,7 @@ const IndexPage = () => {
                     name="Airbnb & Adobe"
                     locked={false}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/airbnb.png"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/airbnb.png"
                     description="Spending 48 hours to solve how users can stay connected during the pandemic"
                     color="180, 20, 25"
                   />
@@ -257,7 +257,7 @@ const IndexPage = () => {
                     name="KPMG Ideation Challenge"
                     locked={false}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/kpmglogo.png"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/kpmglogo.png"
                     description="Representing Ontario on the national stage to answer the question: How might we give back time?"
                     color="1, 49, 138"
                   />
@@ -267,17 +267,17 @@ const IndexPage = () => {
                   md={6}
                   lg={3}
                   as={Link}
-                  to="/w/casefoundry"
+                  to="/w/casecom"
                   locked={false}
                   unfinished={false}
                   style={{ textDecoration: "none" }}
                 >
                   <Card
                     role="Co-Founder, Head of Product"
-                    name="Case Foundry"
+                    name="CaseCom"
                     locked={false}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/logo.png"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/casecomlogo.png"
                     description="Building the next generation of Case Competitions"
                     color="179, 123, 45"
                   />
@@ -304,7 +304,7 @@ const IndexPage = () => {
                     name="Munich Re Canada"
                     locked={true}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/mrlogo.png"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/munichrelogo.png"
                     description="Developer internship turned part-time designer"
                     color="22, 87, 136"
                   />
@@ -321,7 +321,7 @@ const IndexPage = () => {
                     name="Royal Bank of Canada"
                     locked={true}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/rbclogo.jpg"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/rbclogo.jpg"
                     description="Modernizing critical infrastructure for Canada's largest bank"
                     color="0, 93, 170"
                   />
@@ -338,7 +338,7 @@ const IndexPage = () => {
                     name="Western Founders Network"
                     locked={false}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/wfn.png"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/wfn.png"
                     description="Building the visual and motion brand of the largest Business & Technology club on campus over two years of time."
                     color="0, 0, 0"
                   />
@@ -356,7 +356,7 @@ const IndexPage = () => {
                     name="Western University"
                     locked={false}
                     unfinished={false}
-                    image="https://justinzhang.imfast.io/landing/western.jpg"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/western.jpg"
                     description="How might I build a video brand to reach university students?"
                     color="79, 38, 131"
                   />

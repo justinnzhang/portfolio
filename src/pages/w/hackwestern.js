@@ -72,13 +72,13 @@ const HackWestern = () => {
                 <Col>
                   <Image
                     fluid
-                    src="https://justinzhang.imfast.io/hackwestern/sponsorshippackage.jpg"
+                    src="https://doixzan7hf4ti.cloudfront.net/hw6/sponsorshippackage.jpg"
                   />
 
                   <motion.img
                     style={{ y: hwy1 }}
                     className="hw-alien-top"
-                    src="https://justinzhang.imfast.io/hackwestern/hwalien.png"
+                    src="https://doixzan7hf4ti.cloudfront.net/hw6/hwalien.png"
                   />
                 </Col>
               </Row>
@@ -192,7 +192,7 @@ const HackWestern = () => {
                       Our planning board after our 2nd brainstorming session
                     </p>
                     <Image
-                      src="https://justinzhang.imfast.io/hackwestern/hwplanningboard.jpg"
+                      src="https://doixzan7hf4ti.cloudfront.net/hw6/hwplanningboard.jpg"
                       fluid
                       alt="Whiteboard with planning notes"
                       className="shadow"
@@ -227,7 +227,7 @@ const HackWestern = () => {
                   <Col className="picture-highlight hw">
                     <p>A moodboard that was presented</p>
                     <Image
-                      src="https://justinzhang.imfast.io/hackwestern/Moodboards.png"
+                      src="https://doixzan7hf4ti.cloudfront.net/hw6/Moodboards.png"
                       fluid
                       alt="Whiteboard with planning notes"
                       className="shadow"
@@ -284,7 +284,7 @@ const HackWestern = () => {
               <Fade bottom duration={666} distance="50px" delay={300}>
                 <h4 className="solution-color">The Design System</h4>
                 <Image
-                  src="https://justinzhang.imfast.io/hackwestern/designsystem.png"
+                  src="https://doixzan7hf4ti.cloudfront.net/hw6/designsystem.png"
                   fluid
                   alt="A view of the final design choices made by the team"
                 />
@@ -319,7 +319,7 @@ const HackWestern = () => {
                   A Collection of Posts and Graphics
                 </h4>
                 <Image
-                  src="https://justinzhang.imfast.io/hackwestern/completedassets.png"
+                  src="https://doixzan7hf4ti.cloudfront.net/hw6/completedassets.png"
                   fluid
                   alt="A view of the final design choices made by the team"
                 />

@@ -66,7 +66,7 @@ const AdobeJam = () => {
                 <Col>
                   <Image
                     fluid
-                    src="https://justinzhang.imfast.io/adobecreativejam/memories-hero.png"
+                    src="https://doixzan7hf4ti.cloudfront.net/airbnb/memories-hero.png"
                     className="aa-image-fix"
                   />
                 </Col>
@@ -107,7 +107,7 @@ const AdobeJam = () => {
                     <Col className="picture-highlight aa p-5">
                       <p style={{ color: "white" }}>The initial brainstorm</p>
                       <Image
-                        src="https://justinzhang.imfast.io/adobecreativejam/planning1.png"
+                        src="https://doixzan7hf4ti.cloudfront.net/airbnb/planning1.png"
                         fluid
                         alt="Whiteboard with planning notes"
                         className="shadow"
@@ -141,7 +141,7 @@ const AdobeJam = () => {
                         during the research process
                       </p>
                       <Image
-                        src="https://justinzhang.imfast.io/adobecreativejam/reasearch.png"
+                        src="https://doixzan7hf4ti.cloudfront.net/airbnb/reasearch.png"
                         fluid
                         alt="Whiteboard with notes around research points"
                         className="shadow"
@@ -165,7 +165,7 @@ const AdobeJam = () => {
                   <Row className="mt-5 persona shadow-sm">
                     <Col md={4} className="p-5">
                       <Image
-                        src="https://justinzhang.imfast.io/adobecreativejam/jason.jpg"
+                        src="https://doixzan7hf4ti.cloudfront.net/airbnb/jason.jpg"
                         roundedCircle
                         fluid
                       />
@@ -193,7 +193,7 @@ const AdobeJam = () => {
                   <Row className="mt-3 persona">
                     <Col md={4} className="p-5">
                       <Image
-                        src="https://justinzhang.imfast.io/adobecreativejam/sandra.jpg"
+                        src="https://doixzan7hf4ti.cloudfront.net/airbnb/sandra.jpg"
                         roundedCircle
                         fluid
                       />
@@ -244,7 +244,7 @@ const AdobeJam = () => {
                         application, Memories
                       </p>
                       <Image
-                        src="https://justinzhang.imfast.io/adobecreativejam/initialmockup.png"
+                        src="https://doixzan7hf4ti.cloudfront.net/airbnb/initialmockup.png"
                         fluid
                         alt="wireframes"
                         className="shadow"
@@ -298,7 +298,7 @@ const AdobeJam = () => {
                   Explore feed including smart recommendations
                 </h4>
                 <Image
-                  src="https://justinzhang.imfast.io/adobecreativejam/discovery-feature.png"
+                  src="https://doixzan7hf4ti.cloudfront.net/airbnb/discovery-feature.png"
                   fluid
                   alt="A view of the final design choices made by the team"
                 />
@@ -311,7 +311,7 @@ const AdobeJam = () => {
                   recommendations
                 </h4>
                 <Image
-                  src="https://justinzhang.imfast.io/adobecreativejam/editing-feature.png"
+                  src="https://doixzan7hf4ti.cloudfront.net/airbnb/editing-feature.png"
                   fluid
                   alt="A view of the final design choices made by the team"
                 />
@@ -323,7 +323,7 @@ const AdobeJam = () => {
                   Intuitive Memory story format, featuring Perspectives
                 </h4>
                 <Image
-                  src="https://justinzhang.imfast.io/adobecreativejam/memory-feature.png"
+                  src="https://doixzan7hf4ti.cloudfront.net/airbnb/memory-feature.png"
                   fluid
                   alt="A view of the final design choices made by the team"
                 />

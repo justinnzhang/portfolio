@@ -25,6 +25,7 @@ const WesternHousing = () => {
         title="Justin Zhang - Western Housing"
         description="My work as the youngest hire by the University's Marketing Team."
         type="article"
+        url="/w/westernhousing"
       />
       <Navbar />
       <Container fluid style={{ zIndex: "0" }}>
@@ -61,7 +62,7 @@ const WesternHousing = () => {
                 <Col>
                   <Image
                     fluid
-                    src="https://justinzhang.imfast.io/landing/western.jpg"
+                    src="https://doixzan7hf4ti.cloudfront.net/logos/western.jpg"
                     rounded
                   />
                 </Col>
@@ -111,52 +112,43 @@ const WesternHousing = () => {
               <Container>
                 <Fade bottom duration={666} distance="50px">
                   <Row className="mt-5">
-                    <Col md={4} className="my-auto">
-                      <h3 className="font-weight-bold">This is Your RezLife</h3>
-                    </Col>
-                    <Col md={8}>
+                    <Col className="text-center mb-5" md={6} sm={12}>
+                      <h3 className="font-weight-medium mb-3">
+                        This is Your RezLife 2018-2019
+                      </h3>
                       <ResponsiveEmbed
                         aspectRatio="16by9"
                         className="shadow"
                         style={{ borderRadius: "8px" }}
                       >
                         <iframe
-                          width="560"
-                          height="315"
+                          width="430"
+                          height="242"
                           src="https://www.youtube-nocookie.com/embed/XQXDJvgXX9c"
                           frameborder="0"
                           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                           allowfullscreen
-                          title="thisisyourrezlifevideo"
+                          title="Futureview Teaser"
                         ></iframe>
                       </ResponsiveEmbed>
                     </Col>
-                  </Row>
-                </Fade>
-              </Container>
-
-              <Container>
-                <Fade bottom duration={666} distance="50px">
-                  <Row className="mt-5">
-                    <Col md={4} md={{ order: 12 }} className="my-auto">
-                      <h3 className="font-weight-bold">
+                    <Col className="text-center">
+                      <h3 className="font-weight-medium mb-3">
                         CHOPT Student Cooking Competition
                       </h3>
-                    </Col>
-                    <Col md={8}>
                       <ResponsiveEmbed
                         aspectRatio="16by9"
                         className="shadow"
                         style={{ borderRadius: "8px" }}
                       >
                         <iframe
-                          width="560"
-                          height="315"
+                          width="430"
+                          height="242"
                           src="https://www.youtube-nocookie.com/embed/464TEIKQt_0"
                           frameborder="0"
                           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                           allowfullscreen
-                          title="cooking competition"
+                          title="Product Design Sprint Advertisement"
                         ></iframe>
                       </ResponsiveEmbed>
                     </Col>
