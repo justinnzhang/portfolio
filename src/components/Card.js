@@ -16,7 +16,7 @@ const Card = props => {
       props.color +
       ", 0.8), rgba(" +
       props.color +
-      ", 0.3) ), url(" +
+      ", 0.2) ), url(" +
       props.image +
       ")",
   }
@@ -25,8 +25,16 @@ const Card = props => {
     <motion.div
       animate={
         hovered
-          ? { translateY: -10, boxShadow: "0px 0px 20px 2px grey" }
-          : { translateY: 0, boxShadow: "0px 0px 5px 0px grey" }
+          ? {
+              translateY: -5,
+              boxShadow: "0px 10px 16px 2px grey",
+              borderRadius: "8px",
+            }
+          : {
+              translateY: 0,
+              boxShadow: "0px 0px 5px 0px grey",
+              borderRadius: "4px",
+            }
       }
       className="dynamic-cards mb-3"
       style={bgImage}
@@ -47,14 +55,12 @@ const Card = props => {
         {" "}
         {props.locked && (
           <span className="message locked rg">
-            Contact Me!{' '}
-            <AiTwotoneLock />
+            Contact Me! <AiTwotoneLock />
           </span>
         )}
         {props.unfinished && (
           <span className="message soon rg">
-            Coming Soon{' '} 
-            <AiTwotoneLock />
+            Coming Soon <AiTwotoneLock />
           </span>
         )}
       </p>
@@ -72,13 +78,13 @@ const Card = props => {
                 opacity: 1,
                 translateY: 0,
                 padding: "10px",
-                borderRadius: "10px",
+                borderRadius: "4px",
               }
             : {
                 opacity: 0,
                 translateY: 20,
                 padding: "10px",
-                borderRadius: "10px",
+                borderRadius: "4px",
               }
         }
         transition={{ duration: 0.333 }}

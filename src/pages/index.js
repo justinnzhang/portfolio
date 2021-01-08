@@ -71,6 +71,17 @@ const IndexPage = () => {
         title="Justin Zhang's Portfolio | Business - Technology - Design"
         description="Welcome to my personal portfolio! Here, you can find a representation of the projects that I've been able to work on."
         type="website"
+        keywords={[
+          "Justin Zhang",
+          "Portfolio",
+          "Justin Zhang Student",
+          "Justin Zhang Western University",
+          "Justin Zhang Portfolio",
+          "Justin Zhang Product Manager",
+          "Product Management Intern",
+          "Software Engineering Intern",
+          "Ivey School",
+        ]}
       />
       <Navbar />
       <Container fluid style={{ overflow: "hidden" }}>
@@ -136,42 +147,17 @@ const IndexPage = () => {
                         <h1 className="font-weight-bold pb-2 header-fix">
                           Hello There! <Emoji symbol="👋" />
                         </h1>
-                        <motion.div key="text1" variants={UpReveal}>
-                          <p>
-                            My name is Justin Zhang, a
-                            videographer/designer-turned Computer Science and
-                            Business student currently attending the{" "}
-                            <span
-                              style={{ color: "#034638" }}
-                              className="font-weight-medium"
-                              itemprop="affiliation"
-                            >
-                              Ivey School of Business
-                            </span>{" "}
-                            at{" "}
-                            <span
-                              style={{ color: "#4F2683" }}
-                              className="font-weight-medium"
-                              itemprop="affiliation"
-                            >
-                              Western University.
-                            </span>
-                          </p>
-                        </motion.div>
-                        <motion.div
-                          key="text2"
-                          variants={UpReveal}
-                          className="medium-fix"
-                        >
-                          <p>
-                            Currently exploring the intersection of{" "}
-                            <strong>Business</strong>,
-                            <strong>Technology</strong>, and{" "}
-                            <strong>Design,</strong> I am a curious and
-                            passionate student looking to break into{" "}
-                            <strong>Product Management!</strong>
-                          </p>
-                        </motion.div>
+                        <motion.p key="text1" variants={UpReveal}>
+                          My name is Justin Zhang, a
+                          videographer/designer-turned Computer Science and
+                          Business student. Currently exploring the intersection
+                          of <strong>Business</strong>,
+                          <strong>Technology</strong>, and{" "}
+                          <strong>Design,</strong> I am looking to break into{" "}
+                          <strong>
+                            Product Management or Software Development!
+                          </strong>
+                        </motion.p>
                       </motion.div>
                     </motion.div>
                   </Col>
@@ -204,28 +190,10 @@ const IndexPage = () => {
             <Container className="mt-5 mb-4">
               <Row className="mb-4">
                 <Col>
-                  <h2 className="font-weight-bold">Featured</h2>
+                  <h2 className="font-weight-bold">Selected Work</h2>
                 </Col>
               </Row>
               <Row>
-                <Col
-                  sm={12}
-                  md={6}
-                  lg={3}
-                  as={Link}
-                  to="/w/hackwestern"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Card
-                    role="Product Designer"
-                    name="Hack Western"
-                    locked={false}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/hwlogo.png"
-                    description="Bridging the gap between virtual and physical hackathon design for over 500 students across Canada"
-                    color="30, 9, 59"
-                  />
-                </Col>
                 <Col
                   sm={12}
                   md={6}
@@ -294,40 +262,25 @@ const IndexPage = () => {
               </Row>
               <Row>
                 <Col
-                  lg={8}
+                  sm={12}
                   md={6}
-                  onClick={handleShow}
+                  lg={4}
+                  as={Link}
+                  to="/w/hackwestern6"
                   style={{ textDecoration: "none" }}
                 >
                   <Card
-                    role="Developer Intern & Publications Designer"
-                    name="Munich Re Canada"
-                    locked={true}
+                    role="Product Designer"
+                    name="Hack Western"
+                    locked={false}
                     unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/munichrelogo.png"
-                    description="Developer internship turned part-time designer"
-                    color="22, 87, 136"
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/hwlogo.png"
+                    description="Bridging the gap between virtual and physical hackathon design for over 500 students across Canada"
+                    color="30, 9, 59"
                   />
                 </Col>
                 <Col
                   lg={4}
-                  md={6}
-                  onClick={handleShow}
-                  style={{ textDecoration: "none" }}
-                >
-                  {" "}
-                  <Card
-                    role="Technical Systems Analyst"
-                    name="Royal Bank of Canada"
-                    locked={true}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/rbclogo.jpg"
-                    description="Modernizing critical infrastructure for Canada's largest bank"
-                    color="0, 93, 170"
-                  />
-                </Col>
-                <Col
-                  lg={6}
                   md={6}
                   as={Link}
                   to="/w/wfn"
@@ -344,7 +297,7 @@ const IndexPage = () => {
                   />
                 </Col>
                 <Col
-                  lg={6}
+                  lg={4}
                   md={6}
                   as={Link}
                   to="/w/westernhousing"
@@ -359,6 +312,40 @@ const IndexPage = () => {
                     image="https://doixzan7hf4ti.cloudfront.net/logos/western.jpg"
                     description="How might I build a video brand to reach university students?"
                     color="79, 38, 131"
+                  />
+                </Col>
+                <Col
+                  lg={4}
+                  md={6}
+                  onClick={handleShow}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Card
+                    role="Developer Intern & Publications Designer"
+                    name="Munich Re Canada"
+                    locked={true}
+                    unfinished={false}
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/munichrelogo.png"
+                    description="Developer internship turned part-time designer"
+                    color="22, 87, 136"
+                  />
+                </Col>
+
+                <Col
+                  lg={4}
+                  md={6}
+                  onClick={handleShow}
+                  style={{ textDecoration: "none" }}
+                >
+                  {" "}
+                  <Card
+                    role="Technical Systems Analyst"
+                    name="Royal Bank of Canada"
+                    locked={true}
+                    unfinished={false}
+                    image="https://doixzan7hf4ti.cloudfront.net/logos/rbclogo.jpg"
+                    description="Modernizing critical infrastructure for Canada's largest bank"
+                    color="0, 93, 170"
                   />
                 </Col>
               </Row>

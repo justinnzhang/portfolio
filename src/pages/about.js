@@ -174,10 +174,7 @@ const About = () => {
                         <span className="lg">
                           <Emoji symbol="📍" />
                         </span>
-                        <p>
-                          I grew up in Ottawa, currently studying in London,
-                          Ontario, and working (remotely) in Toronto.
-                        </p>
+                        <p>Ottawa / Toronto / London</p>
                       </div>
                     </Col>
                   </Row>
@@ -186,11 +183,9 @@ const About = () => {
                     <Emoji symbol="🔍" />
                   </span>
                   <p>
-                    When approaching a product problem, I try to see it from 3
-                    different angles: how to design it to be user-friendly and
-                    pleasing to use; how to build the product with the
-                    technologies available; and what kind of value this product
-                    would bring to the organization.
+                    I came from a background in creative digital media and
+                    marketing, helping organizations define their brands. Over
+                    time, I realized that I also wanted to try working on the c
                   </p>
 
                   <span className="lg">

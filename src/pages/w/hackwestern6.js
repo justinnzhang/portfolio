@@ -41,7 +41,7 @@ const HackWestern = () => {
             translateY: 0,
           }}
           exit={{ opacity: 0, translateY: 50 }}
-          transition={{ duration: 0.333 }}
+          transition={{ duration: 0.333, ease: [0.17, 0.67, 0.89, 1] }}
           className
         >
           <Row className="pt-5" style={{ background: "#999db6" }}>
@@ -55,7 +55,7 @@ const HackWestern = () => {
                     Bridging the gap between digital and physical hackathon
                     design
                   </h2>
-                  <p>March 2019 - Present</p>
+                  <p>March 2019 - March 2020</p>
                 </Col>
                 <Col sm={6} className="right-first center-on-sm">
                   <a
