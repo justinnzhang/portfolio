@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Fade from "react-reveal/Fade"
+import FadeUp from "../animation/FadeUp"
 
 /* Usage 
 Pass the text components as the children of the component
@@ -16,7 +17,7 @@ const ParagraphComponent = ({ children, title, solution }) => {
   return (
     <>
       <Container>
-        <Fade bottom duration={666} distance="50px">
+        <FadeUp>
           <Row className="mt-5">
             <Col md={4}>
               <h2
@@ -28,7 +29,7 @@ const ParagraphComponent = ({ children, title, solution }) => {
             </Col>
             <Col md={8}>{children}</Col>
           </Row>
-        </Fade>
+        </FadeUp>
       </Container>
     </>
   )

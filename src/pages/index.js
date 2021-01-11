@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 
-import React, { useState } from "react"
+import React from "react"
 import { useViewportScroll, motion, useTransform } from "framer-motion"
 
 import "../App.css"
@@ -8,63 +8,51 @@ import "./pages.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import Emoji from "../components/Emoji"
-import Card from "../components/Card"
+import Card from "../components/cards/Card"
 import SEO from "../components/seo"
 import Navbar from "../components/Navbar"
 
 import Footer from "../components/Footer"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { work } from "../components/articles/ListOfWork"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
-import Modal from "react-bootstrap/Modal"
-import Button from "react-bootstrap/Button"
+import IntroAnimation from "../components/animation/IntroAnimation"
 
 const UpReveal = {
   hidden: {
     opacity: 0,
-    translateY: 100,
+    translateY: 200,
   },
   show: {
     opacity: 1,
     translateY: 0,
-    transition: { duration: 0.666, ease: "easeOut", delay: 0.333 },
+    transition: {
+      duration: 0.666,
+      ease: "easeOut",
+    },
   },
 }
 
 const UpRevealParent = {
   hidden: {
     opacity: 0,
-    translateY: 50,
   },
   show: {
     opacity: 1,
-    translateY: 0,
     transition: {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.333,
       ease: "easeOut",
-      delayChildren: 0.5,
+      staggerChildren: 0.1,
+      delayChildren: 0.333,
     },
   },
 }
 
 const IndexPage = () => {
-  // Parallax Variables
-  const { scrollY } = useViewportScroll()
-  const y1 = useTransform(scrollY, [0, 1500], [0, 500])
-  const y2 = useTransform(scrollY, [0, 1000], [0, 200])
-  // const y3 = useTransform(scrollY, [0, 1200], [0, 300])
-
-  // Modal state variables
-  const [show, setShow] = useState(false)
-
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
-
   return (
     <div>
       <SEO
@@ -85,32 +73,6 @@ const IndexPage = () => {
       />
       <Navbar />
       <Container fluid style={{ overflow: "hidden" }}>
-        <Modal show={show} onHide={handleClose} centered>
-          <Container className="p-5 restricted">
-            <Row>
-              <Col>
-                <p className="lg font-weight-bold">
-                  This Content is Protected{" "}
-                  <FontAwesomeIcon icon="lock" size="x1" />
-                </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <p>
-                  Please reach out to me if you would like more details about
-                  the work done!
-                </p>
-              </Col>
-            </Row>
-          </Container>
-          <Modal.Footer>
-            <Button variant="dark" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
-
         <motion.div
           key="landing"
           initial={{ opacity: 0, translateY: 0 }}
@@ -119,137 +81,94 @@ const IndexPage = () => {
           transition={{ duration: 0.333 }}
         >
           <Row>
-            <Container style={{ zIndex: -1000 }}>
-              <motion.div style={{ y: y1 }}>
+            <Col>
+              <IntroAnimation />
+              <Container>
                 <Row>
-                  <Col md={8} className="">
-                    <motion.div className="pr-5">
-                      <motion.div
-                        animate={{
-                          scale: [0.5, 1, 1, 1, 1, 1, 0],
-                          opacity: [1, 1, 1, 1, 1, 0, 0],
-                          rotate: [0, 20, -20, 20, -20, 1, 1],
-                          translateY: [100, 100, 100, 100, 100, -50, -50],
-                        }}
-                        transition={{
-                          duration: 0.666,
-                        }}
-                        className="initial-wave text-center"
-                      >
-                        <Emoji symbol="👋" />
-                      </motion.div>
-                      <motion.div
-                        className=""
-                        variants={UpRevealParent}
-                        initial="hidden"
-                        animate="show"
-                      >
-                        <h1 className="font-weight-bold pb-2 header-fix">
+                  <Col md={8} className="pt-5 pb-5">
+                    <motion.div
+                      animate={{
+                        scale: [0.5, 1, 1, 1, 1, 1, 0],
+                        opacity: [1, 1, 1, 1, 1, 0, 0],
+                        rotate: [0, 20, -20, 20, -20, 1, 1],
+                        translateY: [100, 100, 100, 100, 100, -50, -50],
+                      }}
+                      transition={{
+                        duration: 0.666,
+                      }}
+                      className="initial-wave text-center"
+                    >
+                      <Emoji symbol="👋" />
+                    </motion.div>
+                    <motion.div
+                      variants={UpRevealParent}
+                      initial="hidden"
+                      animate="show"
+                    >
+                      <div style={{ overflow: "hidden" }}>
+                        <motion.h1
+                          variants={UpReveal}
+                          className="font-weight-bold mb-3"
+                        >
                           Hello There! <Emoji symbol="👋" />
-                        </h1>
-                        <motion.p key="text1" variants={UpReveal}>
-                          My name is Justin Zhang, a
-                          videographer/designer-turned Computer Science and
+                        </motion.h1>
+                      </div>
+                      <div style={{ overflow: "hidden" }}>
+                        <motion.p
+                          key="text1"
+                          variants={UpReveal}
+                          className="lg"
+                        >
+                          My name is{" "}
+                          <span className="gradient-text font-weight-bold">
+                            Justin Zhang
+                          </span>
+                          , a videographer/designer-turned Computer Science and
                           Business student. Currently exploring the intersection
                           of <strong>Business</strong>,
                           <strong>Technology</strong>, and{" "}
-                          <strong>Design,</strong> I am looking to break into{" "}
+                          <strong>Design,</strong> I'm hoping to break into{" "}
                           <strong>
                             Product Management or Software Development!
                           </strong>
                         </motion.p>
-                      </motion.div>
+                      </div>
                     </motion.div>
                   </Col>
-                  <Col md={4}>
-                    <Image
-                      src="https://doixzan7hf4ti.cloudfront.net/other/headshotcutout.png"
-                      fluid
-                      rounded
-                      className="mt-5 headshot"
-                      alt="Justin Zhang headshot"
-                    />
-                    <motion.div
-                      className="circle-bottom"
-                      initial={{ translateY: 50, opacity: 0 }}
-                      animate={{ translateY: 0, opacity: 1 }}
-                      transition={{
-                        delay: 0.8,
-                        ease: "easeOut",
-                        duration: 0.666,
-                      }}
-                      style={{ y: y2 }}
-                    />
-                  </Col>
                 </Row>
-              </motion.div>
-            </Container>
+              </Container>
+            </Col>
           </Row>
 
-          <Row className="featured-section landing-header">
+          <Row className="landing-header featured-section">
             <Container className="mt-5 mb-4">
               <Row className="mb-4">
                 <Col>
-                  <h2 className="font-weight-bold">Selected Work</h2>
+                  <h2 className="font-weight-bold dark-blue">Selected Work</h2>
                 </Col>
               </Row>
               <Row>
-                <Col
-                  sm={12}
-                  md={6}
-                  lg={3}
-                  as={Link}
-                  to="/w/adobejam"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Card
-                    role="Airbnb Memories"
-                    name="Airbnb & Adobe"
-                    locked={false}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/airbnb.png"
-                    description="Spending 48 hours to solve how users can stay connected during the pandemic"
-                    color="180, 20, 25"
-                  />
-                </Col>
-                <Col
-                  sm={12}
-                  md={6}
-                  lg={3}
-                  as={Link}
-                  to="/w/kpmg"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Card
-                    role="Regional Champions"
-                    name="KPMG Ideation Challenge"
-                    locked={false}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/kpmglogo.png"
-                    description="Representing Ontario on the national stage to answer the question: How might we give back time?"
-                    color="1, 49, 138"
-                  />
-                </Col>
-                <Col
-                  sm={12}
-                  md={6}
-                  lg={3}
-                  as={Link}
-                  to="/w/casecom"
-                  locked={false}
-                  unfinished={false}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Card
-                    role="Co-Founder, Head of Product"
-                    name="CaseCom"
-                    locked={false}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/casecomlogo.png"
-                    description="Building the next generation of Case Competitions"
-                    color="179, 123, 45"
-                  />
-                </Col>
+                {work.slice(0, 4).map(element => (
+                  <Col
+                    sm={12}
+                    md={6}
+                    lg={3}
+                    as={Link}
+                    to={element.url}
+                    style={{ textDecoration: "none" }}
+                    key={element.url}
+                  >
+                    <Card
+                      role={element.role}
+                      name={element.name}
+                      locked={element.locked}
+                      unfinished={element.unfinished}
+                      image={element.image}
+                      description={element.description}
+                      color={element.color}
+                    />
+                  </Col>
+                ))}
               </Row>
             </Container>
           </Row>
@@ -257,97 +176,32 @@ const IndexPage = () => {
             <Container>
               <Row className="mt-5 mb-4">
                 <Col>
-                  <h2 className="font-weight-bold">More Work</h2>
+                  <h2 className="font-weight-bold dark-blue">More Work</h2>
                 </Col>
               </Row>
               <Row>
-                <Col
-                  sm={12}
-                  md={6}
-                  lg={4}
-                  as={Link}
-                  to="/w/hackwestern6"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Card
-                    role="Product Designer"
-                    name="Hack Western"
-                    locked={false}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/hwlogo.png"
-                    description="Bridging the gap between virtual and physical hackathon design for over 500 students across Canada"
-                    color="30, 9, 59"
-                  />
-                </Col>
-                <Col
-                  lg={4}
-                  md={6}
-                  as={Link}
-                  to="/w/wfn"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Card
-                    role="VP of Design"
-                    name="Western Founders Network"
-                    locked={false}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/wfn.png"
-                    description="Building the visual and motion brand of the largest Business & Technology club on campus over two years of time."
-                    color="0, 0, 0"
-                  />
-                </Col>
-                <Col
-                  lg={4}
-                  md={6}
-                  as={Link}
-                  to="/w/westernhousing"
-                  style={{ textDecoration: "none" }}
-                >
-                  {" "}
-                  <Card
-                    role="Marketing Assistant"
-                    name="Western University"
-                    locked={false}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/western.jpg"
-                    description="How might I build a video brand to reach university students?"
-                    color="79, 38, 131"
-                  />
-                </Col>
-                <Col
-                  lg={4}
-                  md={6}
-                  onClick={handleShow}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Card
-                    role="Developer Intern & Publications Designer"
-                    name="Munich Re Canada"
-                    locked={true}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/munichrelogo.png"
-                    description="Developer internship turned part-time designer"
-                    color="22, 87, 136"
-                  />
-                </Col>
-
-                <Col
-                  lg={4}
-                  md={6}
-                  onClick={handleShow}
-                  style={{ textDecoration: "none" }}
-                >
-                  {" "}
-                  <Card
-                    role="Technical Systems Analyst"
-                    name="Royal Bank of Canada"
-                    locked={true}
-                    unfinished={false}
-                    image="https://doixzan7hf4ti.cloudfront.net/logos/rbclogo.jpg"
-                    description="Modernizing critical infrastructure for Canada's largest bank"
-                    color="0, 93, 170"
-                  />
-                </Col>
+                {work.slice(4).map(element => (
+                  <Col
+                    sm={12}
+                    md={6}
+                    lg={4 * element.span}
+                    as={Link}
+                    to={element.url}
+                    style={{ textDecoration: "none" }}
+                    key={element.url}
+                    className="mb-2"
+                  >
+                    <Card
+                      role={element.role}
+                      name={element.name}
+                      locked={element.locked}
+                      unfinished={element.unfinished}
+                      image={element.image}
+                      description={element.description}
+                      color={element.color}
+                    />
+                  </Col>
+                ))}
               </Row>
             </Container>
           </Row>

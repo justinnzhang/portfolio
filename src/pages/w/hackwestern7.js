@@ -23,14 +23,13 @@ const HackWestern7 = () => {
     <>
       <SEO
         title="Justin Zhang - Hack Western 7"
-        description="Bridging the gap between digital and physical hackathon
-                    design in my role as a Product Desginer"
+        description="Leading one of Canada’s largest hackathons and the journey to their first virtual event"
         type="article"
       />
       <Navbar />
       <Container fluid style={{ zIndex: "0" }}>
         <motion.div
-          key="hackwestern"
+          key="hackwestern7"
           initial={{ opacity: 0, translateY: -50 }}
           animate={{
             opacity: 1,

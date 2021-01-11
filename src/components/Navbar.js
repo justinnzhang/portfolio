@@ -8,28 +8,32 @@ import Nav from "react-bootstrap/Nav"
 
 const Landing = () => {
   return (
-    <Navbar bg="light" collapseOnSelect expand="sm" variant="light">
+    <Navbar collapseOnSelect expand="sm" variant="none">
       <Container>
-        <Navbar.Brand className="font-weight-medium" as={Link} to="/">
+        <Navbar.Brand
+          className="font-weight-medium gradient-text"
+          as={Link}
+          to="/"
+        >
           Justin Zhang
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link as={Link} to="/" style={{ color: "#507899" }}>
+            <Nav.Link as={Link} to="/" style={{ color: "black" }}>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" style={{ color: "#507899" }}>
+            <Nav.Link as={Link} to="/about" style={{ color: "black" }}>
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/fun" style={{ color: "#507899" }}>
+            <Nav.Link as={Link} to="/fun" style={{ color: "black" }}>
               Fun
             </Nav.Link>
             <Nav.Link
               href="https://doixzan7hf4ti.cloudfront.net/other/JustinZhangResume.pdf"
               target="_blank"
               className="font-weight-medium"
-              style={{ color: "#507899" }}
+              style={{ color: "black" }}
             >
               Resume
             </Nav.Link>
