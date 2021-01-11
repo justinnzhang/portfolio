@@ -16,7 +16,7 @@ const Card = props => {
       props.color +
       ", 0.8), rgba(" +
       props.color +
-      ", 0.3) ), url(" +
+      ", 0.2) ), url(" +
       props.image +
       ")",
   }
@@ -47,14 +47,12 @@ const Card = props => {
         {" "}
         {props.locked && (
           <span className="message locked rg">
-            Contact Me!{' '}
-            <AiTwotoneLock />
+            Contact Me! <AiTwotoneLock />
           </span>
         )}
         {props.unfinished && (
           <span className="message soon rg">
-            Coming Soon{' '} 
-            <AiTwotoneLock />
+            Coming Soon <AiTwotoneLock />
           </span>
         )}
       </p>
@@ -72,13 +70,13 @@ const Card = props => {
                 opacity: 1,
                 translateY: 0,
                 padding: "10px",
-                borderRadius: "10px",
+                borderRadius: "8px",
               }
             : {
                 opacity: 0,
                 translateY: 20,
                 padding: "10px",
-                borderRadius: "10px",
+                borderRadius: "8px",
               }
         }
         transition={{ duration: 0.333 }}

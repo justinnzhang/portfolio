@@ -218,7 +218,7 @@ const IndexPage = () => {
                 >
                   <Card
                     role="Product Designer"
-                    name="Hack Western"
+                    name="Hack Western 6"
                     locked={false}
                     unfinished={false}
                     image="https://doixzan7hf4ti.cloudfront.net/logos/hwlogo.png"
