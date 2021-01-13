@@ -25,44 +25,81 @@ const CardsDisplay = ({ type }) => {
 
   if (type === "featured") {
     return (
-      <motion.div
+      <Row
+        as={motion.div}
         ref={ref}
         variants={CardRevealParent}
         initial="initial"
         animate={inView ? "enter" : "initial"}
       >
-        <Row>
-          {work.slice(0, 4).map(element => (
-            <Col
-              sm={12}
-              md={6}
-              lg={3}
-              as={Link}
-              to={element.url}
-              style={{ textDecoration: "none" }}
-              key={element.url}
-            >
-              <motion.div variants={CardRevealChild}>
-                <Card
-                  role={element.role}
-                  name={element.name}
-                  locked={element.locked}
-                  unfinished={element.unfinished}
-                  image={element.image}
-                  description={element.description}
-                  color={element.color}
-                />
-              </motion.div>
-            </Col>
-          ))}
-        </Row>
-      </motion.div>
+        {work.slice(0, 4).map(element => (
+          <Col
+            sm={12}
+            md={6}
+            lg={3}
+            as={Link}
+            to={element.url}
+            style={{ textDecoration: "none" }}
+            key={element.url}
+          >
+            <motion.div variants={CardRevealChild}>
+              <Card
+                role={element.role}
+                name={element.name}
+                locked={element.locked}
+                unfinished={element.unfinished}
+                image={element.image}
+                description={element.description}
+                color={element.color}
+              />
+            </motion.div>
+          </Col>
+        ))}
+      </Row>
+    )
+  } else {
+    return (
+      <Row
+        as={motion.div}
+        ref={ref}
+        variants={CardRevealParent}
+        initial="initial"
+        animate={inView ? "enter" : "initial"}
+      >
+        {work.slice(4).map(element => (
+          <Col
+            sm={12}
+            md={6}
+            lg={3 * element.span}
+            as={Link}
+            to={element.url}
+            style={{ textDecoration: "none" }}
+            key={element.url}
+          >
+            <motion.div variants={CardRevealChild}>
+              <Card
+                role={element.role}
+                name={element.name}
+                locked={element.locked}
+                unfinished={element.unfinished}
+                image={element.image}
+                description={element.description}
+                color={element.color}
+              />
+            </motion.div>
+          </Col>
+        ))}
+      </Row>
     )
   }
 }
 
 CardsDisplay.PropTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
+}
+
+CardsDisplay.defaultProps = {
+  type: "",
 }
 
 export default CardsDisplay

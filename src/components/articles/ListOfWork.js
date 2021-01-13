@@ -67,7 +67,7 @@ export const work = [
       "Bridging the gap between virtual and physical hackathon design for over 500 students across Canada",
     color: "30, 9, 59",
 
-    span: 2,
+    span: 1,
   },
   {
     // Western Founders Network
@@ -97,31 +97,31 @@ export const work = [
 
     span: 1,
   },
-  {
-    // Munich Re
-    url: "/w/munichre",
-    role: "Developer Intern & Publications Designer",
-    name: "Munich Re Canada",
-    locked: true,
-    unfinished: false,
-    image: "https://doixzan7hf4ti.cloudfront.net/logos/munichrelogo.png",
-    description: "Developer internship turned part-time designer",
-    color: "22, 87, 136",
+  // {
+  //   // Munich Re
+  //   url: "/w/munichre",
+  //   role: "Developer Intern & Publications Designer",
+  //   name: "Munich Re Canada",
+  //   locked: true,
+  //   unfinished: false,
+  //   image: "https://doixzan7hf4ti.cloudfront.net/logos/munichrelogo.png",
+  //   description: "Developer internship turned part-time designer",
+  //   color: "22, 87, 136",
 
-    span: 1,
-  },
-  {
-    // RBC
-    url: "/w/rbc-2020",
-    role: "Technical Systems Analyst Intern",
-    name: "Royal Bank of Canada",
-    locked: true,
-    unfinished: false,
-    image: "https://doixzan7hf4ti.cloudfront.net/logos/rbclogo.jpg",
-    description:
-      "Modernizing critical infrastructure for Canada's largest bank",
-    color: "0, 93, 170",
+  //   span: 1,
+  // },
+  // {
+  //   // RBC
+  //   url: "/w/rbc-2020",
+  //   role: "Technical Systems Analyst Intern",
+  //   name: "Royal Bank of Canada",
+  //   locked: true,
+  //   unfinished: false,
+  //   image: "https://doixzan7hf4ti.cloudfront.net/logos/rbclogo.jpg",
+  //   description:
+  //     "Modernizing critical infrastructure for Canada's largest bank",
+  //   color: "0, 93, 170",
 
-    span: 1,
-  },
+  //   span: 1,
+  // },
 ]

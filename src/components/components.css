@@ -143,3 +143,9 @@
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3eeff",endColorstr="#b7e9ff",GradientType=1);
 }
+
+.role-card {
+  padding: 1em;
+  border-radius: 8px;
+  background: white;
+}

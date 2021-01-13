@@ -40,6 +40,40 @@ p4 {
   font-size: 2rem;
 }
 
+.r-sm {
+  font-size: 0.75rem;
+}
+.r-rg {
+  font-size: 1rem;
+}
+.r-md {
+  font-size: 1.2rem;
+}
+.r-lg {
+  font-size: 1.5rem;
+}
+.r-xl {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .r-sm {
+    font-size: 0.75rem;
+  }
+  .r-rg {
+    font-size: 1rem;
+  }
+  .r-md {
+    font-size: 1.2rem;
+  }
+  .r-lg {
+    font-size: 1.5rem;
+  }
+  .r-xl {
+    font-size: 2rem;
+  }
+}
+
 .font-weight-bold {
   font-weight: 700;
 }
@@ -91,6 +125,9 @@ p4 {
   }
   .display-on-sm {
     display: block;
+  }
+  .left-on-sm {
+    text-align: left !important;
   }
 }
 

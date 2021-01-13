@@ -8,7 +8,7 @@ import Nav from "react-bootstrap/Nav"
 
 const Landing = () => {
   return (
-    <Navbar collapseOnSelect expand="sm" variant="none">
+    <Navbar collapseOnSelect expand="sm" variant="light">
       <Container>
         <Navbar.Brand
           className="font-weight-medium gradient-text"

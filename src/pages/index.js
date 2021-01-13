@@ -1,7 +1,5 @@
-import { Link } from "gatsby"
-
 import React from "react"
-import { useViewportScroll, motion, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 
 import "../App.css"
 import "./pages.css"
@@ -20,6 +18,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
 import IntroAnimation from "../components/animation/IntroAnimation"
+import CardsDisplay from "../components/cards/CardsDisplay"
 
 const UpReveal = {
   hidden: {
@@ -63,6 +62,7 @@ const IndexPage = () => {
           "Justin Zhang",
           "Portfolio",
           "Justin Zhang Student",
+          "Justin Zhang Canada",
           "Justin Zhang Western University",
           "Justin Zhang Portfolio",
           "Justin Zhang Product Manager",
@@ -108,7 +108,7 @@ const IndexPage = () => {
                       <div style={{ overflow: "hidden" }}>
                         <motion.h1
                           variants={UpReveal}
-                          className="font-weight-bold mb-3"
+                          className="font-weight-bold mb-3 xl"
                         >
                           Hello There! <Emoji symbol="👋" />
                         </motion.h1>
@@ -147,29 +147,7 @@ const IndexPage = () => {
                   <h2 className="font-weight-bold dark-blue">Selected Work</h2>
                 </Col>
               </Row>
-              <Row>
-                {work.slice(0, 4).map(element => (
-                  <Col
-                    sm={12}
-                    md={6}
-                    lg={3}
-                    as={Link}
-                    to={element.url}
-                    style={{ textDecoration: "none" }}
-                    key={element.url}
-                  >
-                    <Card
-                      role={element.role}
-                      name={element.name}
-                      locked={element.locked}
-                      unfinished={element.unfinished}
-                      image={element.image}
-                      description={element.description}
-                      color={element.color}
-                    />
-                  </Col>
-                ))}
-              </Row>
+              <CardsDisplay type="featured" />
             </Container>
           </Row>
           <Row>
@@ -179,30 +157,7 @@ const IndexPage = () => {
                   <h2 className="font-weight-bold dark-blue">More Work</h2>
                 </Col>
               </Row>
-              <Row>
-                {work.slice(4).map(element => (
-                  <Col
-                    sm={12}
-                    md={6}
-                    lg={4 * element.span}
-                    as={Link}
-                    to={element.url}
-                    style={{ textDecoration: "none" }}
-                    key={element.url}
-                    className="mb-2"
-                  >
-                    <Card
-                      role={element.role}
-                      name={element.name}
-                      locked={element.locked}
-                      unfinished={element.unfinished}
-                      image={element.image}
-                      description={element.description}
-                      color={element.color}
-                    />
-                  </Col>
-                ))}
-              </Row>
+              <CardsDisplay />
             </Container>
           </Row>
           <Footer />
