@@ -1,19 +1,7 @@
 /* Cards */
-
-.card-item {
-  background: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: left;
-
-  padding: 20px;
-}
-
 .dynamic-cards {
   width: 100%;
-  padding: 20px;
+  padding: 1.2em;
   color: white;
 
   background: white;
@@ -24,8 +12,27 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-origin: border-box;
+}
+
+.text-card {
+  background-color: RGBA(0, 0, 0, 0.6);
+  max-width: 500px;
+}
+
+@supports (backdrop-filter: none) {
+  .text-card {
+    background-color: RGBA(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .text-card {
+    visibility: hidden;
+    position: absolute;
+  }
 }
 
 .logo-image {
@@ -48,7 +55,7 @@
     width: 20%;
   }
   .dynamic-cards {
-    min-height: 10rem;
+    min-height: 12rem;
   }
 }
 
@@ -83,18 +90,6 @@
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#491c06",GradientType=1);
   color: white;
-}
-
-.text-card {
-  background-color: RGBA(0, 0, 0, 0.75);
-  max-width: 500px;
-}
-
-@media only screen and (max-width: 576px) {
-  .text-card {
-    visibility: hidden;
-    position: absolute;
-  }
 }
 
 .sticky-note {
@@ -147,4 +142,10 @@
     rgba(183, 233, 255, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3eeff",endColorstr="#b7e9ff",GradientType=1);
+}
+
+.role-card {
+  padding: 1em;
+  border-radius: 8px;
+  background: white;
 }

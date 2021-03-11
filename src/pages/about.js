@@ -19,6 +19,9 @@ import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
 import Button from "react-bootstrap/Button"
 
+import { LeftRevealChild } from "../components/animation/Variants"
+import FadeInParent from "../components/animation/FadeInParent"
+
 const list = {
   visible: {
     opacity: 1,
@@ -85,7 +88,7 @@ const About = () => {
                       >
                         CaseCom
                       </a>
-                      , and the Product Team Lead at{" "}
+                      , and the Co-Directer of{" "}
                       <a
                         style={{
                           color: "#005DAA",
@@ -98,7 +101,19 @@ const About = () => {
                       >
                         Hack Western
                       </a>
-                      .
+                      . Soon to be a Front-End Developer at{" "}
+                      <a
+                        style={{
+                          color: "#005DAA",
+                          textDecoration: "underline",
+                        }}
+                        className="font-weight-medium"
+                        href="https://shopify.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Shopify!
+                      </a>
                     </p>
                   </motion.div>
                 </Col>
@@ -171,13 +186,6 @@ const About = () => {
                             Western University.
                           </span>
                         </p>
-                        <span className="lg">
-                          <Emoji symbol="📍" />
-                        </span>
-                        <p>
-                          I grew up in Ottawa, currently studying in London,
-                          Ontario, and working (remotely) in Toronto.
-                        </p>
                       </div>
                     </Col>
                   </Row>
@@ -186,19 +194,20 @@ const About = () => {
                     <Emoji symbol="🔍" />
                   </span>
                   <p>
-                    When approaching a product problem, I try to see it from 3
-                    different angles: how to design it to be user-friendly and
-                    pleasing to use; how to build the product with the
-                    technologies available; and what kind of value this product
-                    would bring to the organization.
+                    I came from a background in creative digital media and
+                    marketing, helping organizations define their brands. Over
+                    time, I realized that I was also interested in creating the
+                    products themselves. One thing led to another, and now I am
+                    exploring the intersection of Technology, Business, and
+                    Design!
                   </p>
 
                   <span className="lg">
                     <Emoji symbol="💭" />
                   </span>
                   <p>
-                    With my practical knowledge across Business, Design, and
-                    Technology, I hope to one day{" "}
+                    With my practical experiences ranging across many different
+                    fields, I hope to one day{" "}
                     <span className="font-weight-bold">
                       break into Product Management!
                     </span>{" "}
@@ -249,92 +258,96 @@ const About = () => {
                   </a>
                 </Col>
               </Row>
+
               <Row className="mt-5 mb-3">
                 <Col>
                   <h2 className="font-weight-bold">My Tool Box</h2>
                 </Col>
               </Row>
+
               <Row>
                 <Col>
                   <div className="skill-card">
-                    <IconContext.Provider value={{ className: "xl" }}>
-                      <div>
+                    <FadeInParent>
+                      <IconContext.Provider value={{ className: "xl" }}>
                         <AiOutlineCode />
-                      </div>
-                    </IconContext.Provider>
-                    <h3 className="lg">Development Languages</h3>
-                    <motion.ul
-                      initial="hidden"
-                      animate="visible"
-                      variants={list}
-                      className="skill-list"
-                    >
-                      <motion.li variants={item}>
-                        <span className="font-weight-bold">MERN Stack</span> |
-                        MongoDB, Express, React, Node
-                      </motion.li>
-                      <motion.li variants={item}>Javascript</motion.li>
-                      <motion.li variants={item}>Java</motion.li>
-                      <motion.li variants={item}>Python</motion.li>
-                    </motion.ul>
+                      </IconContext.Provider>
+                      <h3 className="lg">Technical Languages</h3>
+                      <ul className="skill-list">
+                        <motion.li variants={LeftRevealChild}>
+                          JavaScript (React, Node, Express)
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>Java</motion.li>
+                        <motion.li variants={LeftRevealChild}>Python</motion.li>
+                        <motion.li variants={LeftRevealChild}>VBA</motion.li>
+                        <motion.li variants={LeftRevealChild}>C++</motion.li>
+                      </ul>
+                    </FadeInParent>
                   </div>
                 </Col>
                 <Col md={4} sm={12}>
                   <div className="skill-card">
-                    <IconContext.Provider value={{ className: "xl" }}>
-                      <div>
-                        <AiOutlineTool />
-                      </div>
-                    </IconContext.Provider>
+                    <FadeInParent>
+                      <IconContext.Provider value={{ className: "xl" }}>
+                        <div>
+                          <AiOutlineTool />
+                        </div>
+                      </IconContext.Provider>
 
-                    <h3 className="lg">Tools & Frameworks</h3>
-                    <motion.ul
-                      initial="hidden"
-                      animate="visible"
-                      variants={list}
-                      className="skill-list"
-                    >
-                      <motion.li variants={item}>Agile Thinking</motion.li>
-                      <motion.li variants={item}>Scrum</motion.li>
-                      <motion.li variants={item}>Github</motion.li>
-                      <motion.li variants={item}>ZenHub</motion.li>
-                      <motion.li variants={item}>
-                        <span className="font-weight-bold">
-                          Adobe Creative Suite
-                        </span>{" "}
-                        | Premiere, After Effects, Illustrator, Photoshop,
-                        InDesign
-                      </motion.li>
-                      <motion.li variants={item}>
-                        <span className="font-weight-bold">
-                          Office365 Suite
-                        </span>{" "}
-                        | SharePoint, Power Automate, PowerApps
-                      </motion.li>
-                    </motion.ul>
+                      <h3 className="lg">Tools & Frameworks</h3>
+                      <ul className="skill-list">
+                        <motion.li variants={LeftRevealChild}>GitHub</motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          MongoDB
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          AWS (S3, Lightsail, Cloudfront, EC2, Lambda)
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          Cloudflare
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>Figma</motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          <span className="font-weight-bold">
+                            Adobe Creative Suite
+                          </span>{" "}
+                          | Premiere, After Effects, Illustrator, Photoshop,
+                          InDesign
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          <span className="font-weight-bold">
+                            Office365 Suite
+                          </span>{" "}
+                          | SharePoint, Power Automate, PowerApps
+                        </motion.li>
+                      </ul>
+                    </FadeInParent>
                   </div>
                 </Col>
                 <Col md={4} sm={12}>
                   <div className="skill-card">
-                    <IconContext.Provider value={{ className: "xl" }}>
-                      <div>
-                        <AiOutlineCamera />
-                      </div>
-                    </IconContext.Provider>
-                    <h3 className="lg">Camera Equipment</h3>
-                    <motion.ul
-                      initial="hidden"
-                      animate="visible"
-                      variants={list}
-                      className="skill-list"
-                    >
-                      <motion.li variants={item}>Sony A7iii</motion.li>
-                      <motion.li variants={item}>Tamron 28-75 f2.8</motion.li>
-                      <motion.li variants={item}>Zhiyun Crane 2</motion.li>
-                      <motion.li variants={item}>
-                        Zoom H1n Condensor Microphone
-                      </motion.li>
-                    </motion.ul>
+                    <FadeInParent>
+                      <IconContext.Provider value={{ className: "xl" }}>
+                        <div>
+                          <AiOutlineCamera />
+                        </div>
+                      </IconContext.Provider>
+                      <h3 className="lg">Camera Equipment</h3>
+                      <ul className="skill-list">
+                        <motion.li variants={LeftRevealChild}>
+                          Sony A7iii
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          Tamron 28-75 f2.8
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          Zhiyun Crane 2
+                        </motion.li>
+                        <motion.li variants={LeftRevealChild}>
+                          Zoom H1n Condensor Microphone
+                        </motion.li>
+                      </ul>
+                    </FadeInParent>
                   </div>
                 </Col>
               </Row>

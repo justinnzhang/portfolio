@@ -1,6 +1,6 @@
 /* ------------------------- LANDING PAGE ------------------------- */
 .color-lightgrey {
-  color: #dbdbdb;
+  color: #f2f2f2;
 }
 .inner-padding {
   padding-left: 15%;
@@ -8,12 +8,15 @@
 }
 
 .initial-wave {
+  position: absolute;
+  top: 0;
   font-size: 5rem;
 }
 
 @media only screen and (max-width: 991px) {
   .initial-wave {
     position: absolute;
+
     margin-left: 40%;
   }
 
@@ -28,64 +31,24 @@
   }
 }
 
-.dynamic-cards {
-  overflow: hidden;
-}
-
-.hovered {
-  background: grey;
-}
-
-/* Social Buttons */
-.github {
-  border-radius: 5px;
-  padding: 5px 10px 5px 10px;
-  background: white;
-  color: black !important;
-}
-
-.email {
-  border-radius: 5px;
-  padding: 5px 10px 5px 10px;
-  background: white;
-  color: #dc483c !important;
-}
-
-.linkedin {
-  border-radius: 5px;
-  padding: 5px 10px 5px 10px;
-  background: white;
-  color: #2867b2;
-}
-
-.youtube {
-  border-radius: 5px;
-  padding: 5px 10px 5px 10px;
-  background: white;
-  color: #c4302b;
-  transition: all 0.333s;
-}
-
 .featured-section {
-  background: rgb(227, 238, 255);
+  background: rgb(219, 205, 255);
   background: -moz-linear-gradient(
-    45deg,
-    rgba(227, 238, 255, 1) 0%,
-    rgba(183, 233, 255, 1) 100%
+    47deg,
+    rgba(219, 205, 255, 1) 0%,
+    rgba(150, 215, 255, 1) 100%
   );
   background: -webkit-linear-gradient(
-    45deg,
-    rgba(227, 238, 255, 1) 0%,
-    rgba(183, 233, 255, 1) 100%
+    47deg,
+    rgba(219, 205, 255, 1) 0%,
+    rgba(150, 215, 255, 1) 100%
   );
   background: linear-gradient(
-    45deg,
-    rgba(227, 238, 255, 1) 0%,
-    rgba(183, 233, 255, 1) 100%
+    47deg,
+    rgba(219, 205, 255, 1) 0%,
+    rgba(150, 215, 255, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3eeff",endColorstr="#b7e9ff",GradientType=1);
-
-  z-index: 1000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dbcdff",endColorstr="#96d7ff",GradientType=1);
 }
 
 .headshot {

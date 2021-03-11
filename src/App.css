@@ -40,6 +40,40 @@ p4 {
   font-size: 2rem;
 }
 
+.r-sm {
+  font-size: 0.75rem;
+}
+.r-rg {
+  font-size: 1rem;
+}
+.r-md {
+  font-size: 1.2rem;
+}
+.r-lg {
+  font-size: 1.5rem;
+}
+.r-xl {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .r-sm {
+    font-size: 0.75rem;
+  }
+  .r-rg {
+    font-size: 1rem;
+  }
+  .r-md {
+    font-size: 1.2rem;
+  }
+  .r-lg {
+    font-size: 1.5rem;
+  }
+  .r-xl {
+    font-size: 2rem;
+  }
+}
+
 .font-weight-bold {
   font-weight: 700;
 }
@@ -92,6 +126,9 @@ p4 {
   .display-on-sm {
     display: block;
   }
+  .left-on-sm {
+    text-align: left !important;
+  }
 }
 
 .numbered-list {
@@ -107,4 +144,60 @@ p4 {
 
 .solution-color {
   color: #1f6121;
+}
+
+/*Text Formatting*/
+.gradient-text {
+  background-color: darkgrey;
+  background-image: linear-gradient(45deg, #270093, #284c96);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.dark-blue {
+  color: #1a2337;
+}
+.dark-purple {
+  color: #423d4c;
+}
+
+/* Footer */
+
+.footer-links {
+  padding-bottom: 0px;
+  margin-bottom: 0.75rem;
+  line-height: 1.3rem;
+}
+
+.text-close {
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+}
+
+.footer-button-fix {
+  padding-left: 0rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Small Viewports */
+@media only screen and (max-width: 768px) {
+  .footer-button-fix {
+    margin-bottom: 1em;
+    padding-right: 1rem;
+  }
+
+  .large-icons {
+    font-size: 3em;
+  }
+}
+
+.react-icons-fix {
+  vertical-align: -0.1em;
+}
+
+.large-icons {
+  font-size: 1.5em;
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 
-import "./components.css"
-import "../App.css"
+import "../components.css"
+import "../../App.css"
 
 import { AiTwotoneLock } from "react-icons/ai"
 
@@ -25,8 +25,16 @@ const Card = props => {
     <motion.div
       animate={
         hovered
-          ? { translateY: -10, boxShadow: "0px 0px 20px 2px grey" }
-          : { translateY: 0, boxShadow: "0px 0px 5px 0px grey" }
+          ? {
+              translateY: -5,
+              boxShadow: "0px 10px 16px 2px grey",
+              borderRadius: "8px",
+            }
+          : {
+              translateY: 0,
+              boxShadow: "0px 0px 5px 0px grey",
+              borderRadius: "8px",
+            }
       }
       className="dynamic-cards mb-3"
       style={bgImage}
@@ -43,25 +51,40 @@ const Card = props => {
           : { scale: 0.95 }
       }
     >
-      <p>
-        {" "}
-        {props.locked && (
+      {props.locked && (
+        <p style={{ paddingBottom: "0px", lineHeight: "1em" }}>
           <span className="message locked rg">
             Contact Me! <AiTwotoneLock />
           </span>
-        )}
-        {props.unfinished && (
+        </p>
+      )}
+      {props.unfinished && (
+        <p style={{ paddingBottom: "0px", lineHeight: "1em" }}>
           <span className="message soon rg">
             Coming Soon <AiTwotoneLock />
           </span>
-        )}
-      </p>
-      <span>
-        <p className="font-weight-medium mt-2" style={{ lineHeight: "0" }}>
-          {props.name}
         </p>
-        <h3 className="font-weight-medium">{props.role}</h3>
-      </span>
+      )}
+
+      <p
+        className="font-weight-regular"
+        style={{
+          paddingBottom: "0px",
+          marginBottom: "0.5em",
+          paddingTop: "0.5em",
+          lineHeight: "1em",
+          color: "#EAEAEA",
+        }}
+      >
+        {props.name}
+      </p>
+      <h3
+        className="font-weight-medium"
+        style={{ paddingTop: "0px", lineHeight: "1em" }}
+      >
+        {props.role}
+      </h3>
+
       <motion.p
         className="font-weight-light text-card"
         animate={
@@ -70,13 +93,13 @@ const Card = props => {
                 opacity: 1,
                 translateY: 0,
                 padding: "10px",
-                borderRadius: "8px",
+                borderRadius: "4px",
               }
             : {
                 opacity: 0,
                 translateY: 20,
                 padding: "10px",
-                borderRadius: "8px",
+                borderRadius: "4px",
               }
         }
         transition={{ duration: 0.333 }}
