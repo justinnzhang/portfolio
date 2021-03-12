@@ -1,8 +1,8 @@
 {
-  "name": "Site",
+  "name": "justin-portfolio-site",
   "private": true,
   "description": "A look at Justin Zhang's professional and personal projects, ranging from Product Design, Product Management, Technical Projects, Videography, and more.",
-  "version": "2.0",
+  "version": "2.0.0",
   "author": "Justin Zhang <justinzhangzll@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
