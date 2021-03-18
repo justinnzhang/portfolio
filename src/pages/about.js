@@ -8,37 +8,56 @@ import Navbar from "../components/Navbar"
 import Emoji from "../components/Emoji"
 import SEO from "../components/seo"
 
-import { IconContext } from "react-icons"
 import { AiOutlineCode, AiOutlineTool, AiOutlineCamera } from "react-icons/ai"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
-import Button from "react-bootstrap/Button"
 
-import { LeftRevealChild } from "../components/animation/Variants"
-import FadeInParent from "../components/animation/FadeInParent"
+import SkillCard from "../components/SkillCard"
 
-const list = {
-  visible: {
-    opacity: 1,
-    translateY: 0,
-    transition: {
-      when: "beforeChildren",
-      staggerChildren: 0.15,
-      ease: "easeOut",
-    },
+const skillList = [
+  {
+    title: "Technical Languages",
+    icon: <AiOutlineCode />,
+    skills: [
+      "JavaScript (React, Node, Express)",
+      "Java",
+      "Python",
+      "VBA",
+      "C++",
+    ],
   },
-  hidden: { opacity: 0, translateY: 20, transition: { delay: 1 } },
-}
-
-const item = {
-  visible: { opacity: 1, x: 0 },
-  hidden: { opacity: 0, x: -50 },
-}
+  {
+    title: "Tools & Frameworks",
+    icon: <AiOutlineTool />,
+    skills: [
+      <span>
+        <span className="font-weight-medium">AWS</span> (S3, Lightsail,
+        Cloudfront, Lambda)
+      </span>,
+      <span>
+        <span className="font-weight-medium">Adobe Creative Suite</span> (Video
+        and Photo)
+      </span>,
+      "GitHub",
+      "MongoDB",
+      "Cloudflare",
+      "Figma",
+    ],
+  },
+  {
+    title: "Camera Equipment",
+    icon: <AiOutlineCamera />,
+    skills: [
+      "Sony A7iii",
+      "Tamron 28-75 f2.8",
+      "Zhiyun Crane 2",
+      "Zoom H1n Condensor Microphone",
+    ],
+  },
+]
 
 const About = () => {
   return (
@@ -214,48 +233,6 @@ const About = () => {
                     Feel free to reach out and get connected, I love to meet new
                     people!
                   </p>
-                  <a
-                    href="https://www.linkedin.com/in/justinzhang000/"
-                    target="_blank"
-                    style={{ textDecoration: "none" }}
-                    rel="noopener noreferrer"
-                  >
-                    <Button
-                      variant="none"
-                      style={{ color: "#2867b2", paddingLeft: "0px" }}
-                    >
-                      <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
-                    </Button>{" "}
-                  </a>
-                  <a
-                    href="https://github.com/madebyjustinzhang"
-                    target="_blank"
-                    style={{ textDecoration: "none" }}
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="none">
-                      <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
-                    </Button>{" "}
-                  </a>
-                  <a
-                    href="https://www.youtube.com/justinzhang"
-                    target="_blank"
-                    style={{ textDecoration: "none" }}
-                    rel="noopener noreferrer"
-                  >
-                    <Button
-                      variant="none"
-                      className="youtube"
-                      style={{ color: "#c4302b" }}
-                    >
-                      <FontAwesomeIcon icon={["fab", "youtube"]} size="2x" />
-                    </Button>{" "}
-                  </a>
-                  <a href="mailto:justinzhangzll@gmail.com">
-                    <Button variant="none" className="email">
-                      <FontAwesomeIcon icon="envelope" size="2x" />
-                    </Button>
-                  </a>
                 </Col>
               </Row>
 
@@ -266,90 +243,15 @@ const About = () => {
               </Row>
 
               <Row>
-                <Col>
-                  <div className="skill-card">
-                    <FadeInParent>
-                      <IconContext.Provider value={{ className: "xl" }}>
-                        <AiOutlineCode />
-                      </IconContext.Provider>
-                      <h3 className="lg">Technical Languages</h3>
-                      <ul className="skill-list">
-                        <motion.li variants={LeftRevealChild}>
-                          JavaScript (React, Node, Express)
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>Java</motion.li>
-                        <motion.li variants={LeftRevealChild}>Python</motion.li>
-                        <motion.li variants={LeftRevealChild}>VBA</motion.li>
-                        <motion.li variants={LeftRevealChild}>C++</motion.li>
-                      </ul>
-                    </FadeInParent>
-                  </div>
-                </Col>
-                <Col md={4} sm={12}>
-                  <div className="skill-card">
-                    <FadeInParent>
-                      <IconContext.Provider value={{ className: "xl" }}>
-                        <div>
-                          <AiOutlineTool />
-                        </div>
-                      </IconContext.Provider>
-
-                      <h3 className="lg">Tools & Frameworks</h3>
-                      <ul className="skill-list">
-                        <motion.li variants={LeftRevealChild}>GitHub</motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          MongoDB
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          AWS (S3, Lightsail, Cloudfront, EC2, Lambda)
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          Cloudflare
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>Figma</motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          <span className="font-weight-bold">
-                            Adobe Creative Suite
-                          </span>{" "}
-                          | Premiere, After Effects, Illustrator, Photoshop,
-                          InDesign
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          <span className="font-weight-bold">
-                            Office365 Suite
-                          </span>{" "}
-                          | SharePoint, Power Automate, PowerApps
-                        </motion.li>
-                      </ul>
-                    </FadeInParent>
-                  </div>
-                </Col>
-                <Col md={4} sm={12}>
-                  <div className="skill-card">
-                    <FadeInParent>
-                      <IconContext.Provider value={{ className: "xl" }}>
-                        <div>
-                          <AiOutlineCamera />
-                        </div>
-                      </IconContext.Provider>
-                      <h3 className="lg">Camera Equipment</h3>
-                      <ul className="skill-list">
-                        <motion.li variants={LeftRevealChild}>
-                          Sony A7iii
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          Tamron 28-75 f2.8
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          Zhiyun Crane 2
-                        </motion.li>
-                        <motion.li variants={LeftRevealChild}>
-                          Zoom H1n Condensor Microphone
-                        </motion.li>
-                      </ul>
-                    </FadeInParent>
-                  </div>
-                </Col>
+                {skillList.map((element, index) => (
+                  <Col md={4} sm={12}>
+                    <SkillCard
+                      title={element.title}
+                      icon={element.icon}
+                      skills={element.skills}
+                    />
+                  </Col>
+                ))}
               </Row>
             </Container>
           </Row>

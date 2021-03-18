@@ -1,5 +1,4 @@
 import React from "react"
-import { motion } from "framer-motion"
 import Fade from "react-reveal/Fade"
 import { Link } from "gatsby"
 

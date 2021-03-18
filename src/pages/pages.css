@@ -202,13 +202,15 @@
 }
 
 .skill-card {
-  padding-bottom: 20px;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .skill-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: #171717;
 }
 
 .glance-section {

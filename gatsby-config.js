@@ -28,11 +28,16 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        sitemapSize: 5000,
+      },
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.justinzhang.ca",
+        host: "https://justinzhang.ca",
         sitemap: "https://www.justinzhang.ca/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
