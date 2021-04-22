@@ -67,7 +67,7 @@ const Fun = () => {
               <Row>
                 <Col>
                   <h2 className="font-weight-bold">Featured Short Films</h2>
-                  <p>
+                  <p style={{ color: "#383838" }} className="mb-4">
                     The first video I made created using an iPod pointed towards
                     a TV screen while my friends and I played video games
                     together. More than 10 years later, I've had the opportunity
@@ -223,7 +223,7 @@ const Fun = () => {
               <Row className="mt-5">
                 <Col>
                   <h2 className="font-weight-bold">Animation Projects</h2>
-                  <p>
+                  <p style={{ color: "#383838" }} className="mb-4">
                     As the next step in creating digital content, I've stepped
                     into the world of product rendering and 3D design. Using
                     Blender, Adobe After Effects, and Adobe Premiere Pro, I'm

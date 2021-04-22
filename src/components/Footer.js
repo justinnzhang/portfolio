@@ -20,13 +20,7 @@ import {
 } from "react-icons/io5"
 
 import { GrGatsbyjs } from "react-icons/gr"
-import {
-  SiFramer,
-  SiBootstrap,
-  SiAmazonaws,
-  SiCloudflare,
-  SiFigma,
-} from "react-icons/si"
+import { SiBootstrap, SiAmazonaws, SiCloudflare, SiFigma } from "react-icons/si"
 import { IconContext } from "react-icons"
 
 export const SocialsList = () => {
@@ -121,18 +115,6 @@ export const TechnologyList = () => {
             <GrGatsbyjs />
           </IconContext.Provider>{" "}
           Gatsby
-        </a>
-      </p>
-      <p className="footer-links">
-        <a
-          href="https://www.framer.com/motion/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <IconContext.Provider value={{ className: "react-icons-fix" }}>
-            <SiFramer />
-          </IconContext.Provider>{" "}
-          Framer Motion API
         </a>
       </p>
       <p className="footer-links">
@@ -235,7 +217,7 @@ const Footer = () => {
                 loop: Infinity,
                 ease: "easeInOut",
               }}
-            ></motion.div>
+            />
           </Col>
         </Row>
       </Container>
