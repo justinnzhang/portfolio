@@ -52,7 +52,7 @@ export const SocialsList = () => {
       </p>
       <p className="footer-links">
         <a
-          href="https://github.com/madebyjustinzhang"
+          href="https://github.com/justinnzhang"
           target="_blank"
           rel="noopener noreferrer"
         >
