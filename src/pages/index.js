@@ -68,7 +68,9 @@ const IndexPage = () => {
           "Justin Zhang Product Manager",
           "Product Management Intern",
           "Software Engineering Intern",
-          "Ivey School",
+          "Ivey Business School School",
+          "Shopify intern",
+          "RBC intern",
         ]}
       />
       <Navbar />

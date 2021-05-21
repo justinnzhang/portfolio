@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Justin Zhang's Portfolio`,
-    description: `A collection of my creative work in Product Design, Product Management, Videography, Animation, and so much more!`,
-    author: `Justin Zhang`,
+    description: `I'm a computer science and business student with a background in design and videography. Take a look through my past experiences and projects that I'm most proud of!`,
+    author: `@justinnzhang`,
     siteUrl: `https://www.justinzhang.ca`,
+    keywords: `justin zhang, intern, product manager, software engineer, designer, videographer, computer science and business student, student, Western university, ivey business school`,
+    image: `/img/site-banner.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,7 +22,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Justin Zhang's Portfolio`,
-        short_name: `starter`,
+        short_name: `portfolio`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -38,7 +40,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://justinzhang.ca",
-        sitemap: "https://www.justinzhang.ca/sitemap.xml",
+        sitemap: "https://justinzhang.ca/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },

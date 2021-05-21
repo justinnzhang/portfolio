@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import favicon from "../images/favicon.ico"
 
-function SEO({ description, lang, meta, title, type, url }) {
+function SEO({ description, lang, meta, title, type, url, image, keywords }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,6 +20,8 @@ function SEO({ description, lang, meta, title, type, url }) {
             title
             description
             author
+            keywords
+            image
           }
         }
       }
@@ -27,6 +29,9 @@ function SEO({ description, lang, meta, title, type, url }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaTitle = title || site.siteMetadata.title
+  const metaKeywords = keywords || site.siteMetadata.keywords
+  const displayImage = image || site.siteMetadata.image
 
   return (
     <Helmet
@@ -42,17 +47,18 @@ function SEO({ description, lang, meta, title, type, url }) {
           name: "author",
           content: "Justin Zhang",
         },
-        { name: "og:url", content: `https://justinzhang.ca${url}` },
+        { name: "keywords", content: metaKeywords },
+        { name: "og:url", content: `https://justinzhang.ca/${url}` },
         { name: "twitter:site", content: "https://justinzhang.ca" },
         { name: "twitter:creator", content: "Justin Zhang" },
-        { name: "twitter:title", content: title },
+        { name: "twitter:title", content: metaTitle },
         {
           name: "twitter:image",
-          content: "https://doixzan7hf4ti.cloudfront.net/other/headshot.png",
+          content: displayImage,
         },
         {
           property: "og:title",
-          content: title,
+          content: metaTitle,
         },
         { property: "og:site_name", content: "Justin Zhang's Portfolio" },
         {
@@ -65,7 +71,7 @@ function SEO({ description, lang, meta, title, type, url }) {
         },
         {
           property: "og:image",
-          content: "https://doixzan7hf4ti.cloudfront.net/other/headshot.png",
+          content: displayImage,
         },
       ].concat(meta)}
     >
