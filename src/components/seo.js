@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title, type, url, image, keywords }) {
     `
   )
 
+  const metaURL = url || ""
   const metaDescription = description || site.siteMetadata.description
   const metaTitle = title || site.siteMetadata.title
   const metaKeywords = keywords || site.siteMetadata.keywords
@@ -48,13 +49,20 @@ function SEO({ description, lang, meta, title, type, url, image, keywords }) {
           content: "Justin Zhang",
         },
         { name: "keywords", content: metaKeywords },
-        { name: "og:url", content: `https://justinzhang.ca/${url}` },
+        { name: "og:url", content: `https://justinzhang.ca/${metaURL}` },
+        { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:site", content: "https://justinzhang.ca" },
-        { name: "twitter:creator", content: "Justin Zhang" },
+        { name: "twitter:creator", content: "@justinnzhang" },
+        { name: "twitter:author", content: "@justinnzhang" },
         { name: "twitter:title", content: metaTitle },
         {
           name: "twitter:image",
           content: displayImage,
+        },
+        {
+          name: "twitter:image:alt",
+          content:
+            "A colorful representation of myself with the text: Hi! I'm Justin Zhang :wave:, Computer Science & Business Student. Learning Software Engineering & Product Management. Previously Designer & Videographer",
         },
         {
           property: "og:title",
@@ -70,8 +78,13 @@ function SEO({ description, lang, meta, title, type, url, image, keywords }) {
           content: type,
         },
         {
-          property: "og:image",
+          property: "og:image:url",
           content: displayImage,
+        },
+        {
+          property: "og:image:alt",
+          content:
+            "A colorful representation of myself with the text: Hi! I'm Justin Zhang :wave:, Computer Science & Business Student. Learning Software Engineering & Product Management. Previously Designer & Videographer",
         },
       ].concat(meta)}
     >

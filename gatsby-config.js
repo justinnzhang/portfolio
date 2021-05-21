@@ -3,9 +3,9 @@ module.exports = {
     title: `Justin Zhang's Portfolio`,
     description: `I'm a computer science and business student with a background in design and videography. Take a look through my past experiences and projects that I'm most proud of!`,
     author: `@justinnzhang`,
-    siteUrl: `https://www.justinzhang.ca`,
+    siteUrl: `https://justinzhang.ca`,
     keywords: `justin zhang, intern, product manager, software engineer, designer, videographer, computer science and business student, student, Western university, ivey business school`,
-    image: `/img/site-banner.png`,
+    image: `https://justinzhang.ca/img/site-banner.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -55,8 +55,7 @@ const IndexPage = () => {
   return (
     <div>
       <SEO
-        title="Justin Zhang's Portfolio | Business - Technology - Design"
-        description="Welcome to my personal portfolio! Here, you can find a representation of the projects that I've been able to work on."
+        title="Justin Zhang's Portfolio"
         type="website"
         keywords={[
           "Justin Zhang",
