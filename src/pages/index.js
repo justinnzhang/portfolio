@@ -6,7 +6,6 @@ import "./pages.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import Emoji from "../components/Emoji"
-import Card from "../components/cards/Card"
 import SEO from "../components/seo"
 import Navbar from "../components/Navbar"
 
@@ -16,9 +15,12 @@ import { work } from "../components/articles/ListOfWork"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Image from "react-bootstrap/Image"
+import Alert from "react-bootstrap/Alert"
+import Button from "react-bootstrap/Button"
 import IntroAnimation from "../components/animation/IntroAnimation"
 import CardsDisplay from "../components/cards/CardsDisplay"
+
+const HIRE_SITE_URL = "https://hirejustinzhang.com"
 
 const UpReveal = {
   hidden: {
@@ -81,6 +83,32 @@ const IndexPage = () => {
           exit={{ opacity: 0, translateY: 50 }}
           transition={{ duration: 0.333 }}
         >
+          <Row>
+            <Col>
+              <Container className="pt-3">
+                <Alert variant="primary">
+                  <Alert.Heading>Update</Alert.Heading>
+                  <p>
+                    I've recently created an interactive cover letter
+                    higlighting who I am beyond the resume. Check it out at{" "}
+                    <Alert.Link href={HIRE_SITE_URL} target="_blank">
+                      {HIRE_SITE_URL}
+                    </Alert.Link>
+                    !
+                  </p>
+                  <div className="d-flex justify-content-end">
+                    <Button
+                      variant="outline-primary"
+                      href={HIRE_SITE_URL}
+                      target="_blank"
+                    >
+                      Visit
+                    </Button>
+                  </div>
+                </Alert>
+              </Container>
+            </Col>
+          </Row>
           <Row>
             <Col>
               <IntroAnimation />

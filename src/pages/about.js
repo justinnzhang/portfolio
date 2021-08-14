@@ -14,8 +14,12 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
+import Alert from "react-bootstrap/Alert"
+import Button from "react-bootstrap/Button"
 
 import SkillCard from "../components/SkillCard"
+
+const HIRE_SITE_URL = "https://hirejustinzhang.com"
 
 const skillList = [
   {
@@ -78,7 +82,6 @@ const About = () => {
           }}
           exit={{ opacity: 0, translateY: 0 }}
           transition={{ duration: 0.5 }}
-          className
         >
           <Row className="mb-5 featured-section">
             <Container>
@@ -92,9 +95,9 @@ const About = () => {
                       ease: "easeOut",
                     }}
                   >
-                    <h1 className="font-weight-bold">At A Glance</h1>
+                    <h1 className="font-weight-bold">At a glance</h1>
                     <p>
-                      I am currently the Co-Founder and Head of Product at{" "}
+                      I am currently the Co-Founder of{" "}
                       <a
                         style={{
                           color: "#005DAA",
@@ -102,12 +105,25 @@ const About = () => {
                         }}
                         className="font-weight-medium"
                         href="https://casecom.app"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         target="_blank"
                       >
                         CaseCom
+                      </a>{" "}
+                      (
+                      <a
+                        style={{
+                          color: "#005DAA",
+                          textDecoration: "underline",
+                        }}
+                        className="font-weight-medium"
+                        href="https://www.theleagueofinnovators.org/"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        League of Innovators Batch 7
                       </a>
-                      , and the Co-Directer of{" "}
+                      ), and the Co-Directer of{" "}
                       <a
                         style={{
                           color: "#005DAA",
@@ -115,12 +131,12 @@ const About = () => {
                         }}
                         className="font-weight-medium"
                         href="https://hackwestern.com/#/"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         target="_blank"
                       >
                         Hack Western
                       </a>
-                      . Soon to be a Front-End Developer at{" "}
+                      . Previously a Software Developer Intern at{" "}
                       <a
                         style={{
                           color: "#005DAA",
@@ -128,11 +144,25 @@ const About = () => {
                         }}
                         className="font-weight-medium"
                         href="https://shopify.com"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         target="_blank"
                       >
-                        Shopify!
+                        Shopify
+                      </a>{" "}
+                      and Technical Systems Analyst Intern at{" "}
+                      <a
+                        style={{
+                          color: "#005DAA",
+                          textDecoration: "underline",
+                        }}
+                        className="font-weight-medium"
+                        href="https://www.rbcroyalbank.com"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        The Royal Bank of Canada
                       </a>
+                      !
                     </p>
                   </motion.div>
                 </Col>
@@ -177,22 +207,47 @@ const About = () => {
                 <Col sm={8} className="mb-5">
                   <Row>
                     <Col>
+                      <Alert variant="primary">
+                        <Alert.Heading>Update</Alert.Heading>
+                        <p>
+                          I've recently created an interactive cover letter
+                          higlighting who I am beyond the resume. Check it out
+                          at{" "}
+                          <Alert.Link href={HIRE_SITE_URL} target="_blank">
+                            {HIRE_SITE_URL}
+                          </Alert.Link>
+                          !
+                        </p>
+                        <div className="d-flex justify-content-end">
+                          <Button
+                            variant="outline-primary"
+                            href={HIRE_SITE_URL}
+                            target="_blank"
+                          >
+                            Visit
+                          </Button>
+                        </div>
+                      </Alert>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
                       {" "}
                       <div
-                        itemscope
-                        itemtype="http://data-vocabulary.org/Person"
+                        itemScope
+                        itemType="http://data-vocabulary.org/Person"
                       >
                         <span className="lg">
                           <Emoji symbol="🎓" />
                         </span>
                         <p>
-                          My name is <span itemprop="name">Justin Zhang</span>{" "}
+                          My name is <span itemProp="name">Justin Zhang</span>{" "}
                           and I'm currently pursuing a dual degree in Honors
                           Business Administration and Computer Science from{" "}
                           <span
                             style={{ color: "#034638" }}
                             className="font-weight-medium"
-                            itemprop="affiliation"
+                            itemProp="affiliation"
                           >
                             the Ivey School of Business
                           </span>{" "}
@@ -200,7 +255,7 @@ const About = () => {
                           <span
                             style={{ color: "#4F2683" }}
                             className="font-weight-medium"
-                            itemprop="affiliation"
+                            itemProp="affiliation"
                           >
                             Western University.
                           </span>
