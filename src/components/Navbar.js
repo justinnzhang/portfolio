@@ -30,7 +30,7 @@ const Landing = () => {
               Fun
             </Nav.Link>
             <Nav.Link
-              href="https://doixzan7hf4ti.cloudfront.net/other/JustinZhangResume.pdf"
+              href="https://doixzan7hf4ti.cloudfront.net/resumes/JustinZhangResumePublic.pdf"
               target="_blank"
               className="font-weight-medium"
               style={{ color: "black" }}
