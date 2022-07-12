@@ -154,7 +154,7 @@ const IndexPage = () => {
                           </span>
                           , a videographer/designer-turned Computer Science and
                           Business student. Currently exploring the intersection
-                          of <strong>Business</strong>,
+                          of <strong>Business</strong>,{" "}
                           <strong>Technology</strong>, and{" "}
                           <strong>Design,</strong> I'm hoping to break into{" "}
                           <strong>
