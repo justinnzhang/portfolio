@@ -21,6 +21,7 @@ import IntroAnimation from "../components/animation/IntroAnimation"
 import CardsDisplay from "../components/cards/CardsDisplay"
 
 const HIRE_SITE_URL = "https://hirejustinzhang.com"
+const NEW_PORTFOLIO = "https://justinzha.ng?utm_source=old_portfolio"
 
 const UpReveal = {
   hidden: {
@@ -89,10 +90,9 @@ const IndexPage = () => {
                 <Alert variant="primary">
                   <Alert.Heading>Update</Alert.Heading>
                   <p>
-                    I've recently created an interactive cover letter
-                    higlighting who I am beyond the resume. Check it out at{" "}
-                    <Alert.Link href={HIRE_SITE_URL} target="_blank">
-                      {HIRE_SITE_URL}
+                    My updated website is now live at{" "}
+                    <Alert.Link href={NEW_PORTFOLIO} target="_blank">
+                      {NEW_PORTFOLIO}
                     </Alert.Link>
                     !
                   </p>
